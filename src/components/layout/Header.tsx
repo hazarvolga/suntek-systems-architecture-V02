@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { useContent } from '@/content/provider';
+import { SearchDialog } from '@/components/search/SearchDialog';
 
 export default function Header() {
     const { nav, site } = useContent();
@@ -17,22 +18,25 @@ export default function Header() {
                     </div>
                     <h2 className="text-xl font-bold tracking-tighter text-off-white uppercase group-hover:text-primary transition-colors">{site.name}</h2>
                 </Link>
-                <nav className="hidden md:flex items-center gap-10">
+                <nav className="hidden lg:flex items-center gap-8">
                     {nav.header.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-[10px] font-bold tracking-[0.2em] text-silver hover:text-primary transition-colors uppercase"
+                            className="text-[10px] font-bold tracking-[0.2em] text-silver hover:text-primary transition-colors uppercase whitespace-nowrap"
                         >
                             {link.label}
                         </Link>
                     ))}
                 </nav>
-                <button className="border border-primary text-primary px-8 py-2 text-[10px] font-bold tracking-[0.2em] hover:bg-primary hover:text-black transition-all">
-                    GET QUOTE
-                </button>
+                <div className="hidden md:flex items-center gap-4">
+                    <SearchDialog />
+                    <button className="hidden xl:block border border-primary text-primary px-6 py-2 text-[10px] font-bold tracking-[0.2em] hover:bg-primary hover:text-black transition-all whitespace-nowrap">
+                        TEKLİF AL
+                    </button>
+                </div>
                 {/* Mobile Menu Trigger */}
-                <button className="md:hidden text-primary">
+                <button className="lg:hidden text-primary">
                     <Menu />
                 </button>
             </div>
