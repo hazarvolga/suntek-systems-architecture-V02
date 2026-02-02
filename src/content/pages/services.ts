@@ -1,85 +1,21 @@
+```typescript
 import { ServicesPageContent } from "../schema";
 
 export const servicesContent: ServicesPageContent = {
     hero: {
-        sysCode: "SYS_SRV",
-        badge: "Service Catalog",
-        title: "SERVICES",
-        description: "We build the corporate infrastructure of the future today with Suntek Technical Service Archive and modern System Architecture solutions.",
+        sysCode: "SRV_01",
+        badge: "Kurumsal Hizmetler",
+        title: "Uçtan Uca <span class='text-primary'>Bilişim Çözümleri</span>",
+        description: "Ağ güvenliğinden bulut yedeğine, felaket kurtarmadan endüstriyel altyapı kurulumuna kadar işletmenizin tüm teknolojik ihtiyaçlarını karşılıyoruz.",
         primaryCta: {
-            label: "Request Technical Spec",
-            href: "/contact",
-            variant: "outline"
-        }
+            label: "Hizmetlerimiz",
+            href: "#services-list",
+            variant: "primary"
+        },
+        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_E52qAgQvVbgDqEq7YXZJpXN7Sg0bDbCx9_Q0ZtY-t3QsgcO_XlcgXwdGzhX9OOFYyX0PDe9L9Z8RjVBWfy2lcqM9Nlo6ysP7037E9T2lXtb3MypX3Y1Y62Gvkyk0E0amF45Q220XnKCCJ7NnRo49X-EueGZqK6YmnReu2M9wXy4E0qQ4Z9dD2fe2gLzJweFc7GZ9FkXnZGEKtyW7uP9KkyQ30L7__06t9X7R3q1F5G8Xy7A4Bw2C9k5E2L0J1Z4X8Q"
     },
     items: [
         {
-            id: "digital-transformation",
-            title: "Digital Transformation",
-            description: "Modernizing legacy systems with cloud-native architectures.",
-            features: [
-                "Cloud Migration Strategy",
-                "Legacy System Modernization",
-                "Process Automation",
-                "Data Analytics Integration"
-            ],
-            capabilities: [
-                { label: "Efficiency Increase", value: "40%" },
-                { label: "Cost Reduction", value: "25%" }
-            ]
-        },
-        {
-            id: "technology-consulting",
-            title: "Technology Consulting",
-            description: "Strategic guidance for complex technical decision making.",
-            features: [
-                "Technical Roadmap Design",
-                "Vendor Selection & Management",
-                "Architecture Review",
-                "IT Governance"
-            ],
-            capabilities: [
-                { label: "Strategic Plans", value: "50+" },
-                { label: "Clients Served", value: "200+" }
-            ]
-        },
-        {
-            id: "network-security",
-            title: "Network Security",
-            description: "Fortifying infrastructure against modern cyber threats.",
-            features: [
-                "Zero Trust Architecture",
-                "Penetration Testing",
-                "Incident Response Planning",
-                "24/7 Security Monitoring"
-            ],
-            capabilities: [
-                { label: "Threats Blocked", value: "99.9%" },
-                { label: "Uptime Guaranteed", value: "99.99%" }
-            ]
-        },
-        {
-            id: "disaster-recovery",
-            title: "Disaster Recovery",
-            description: "Ensuring business continuity in the face of unforeseen events.",
-            features: [
-                "Backup Strategy Design",
-                "Recovery Simulation",
-                "Business Continuity Planning",
-                "Data Replication"
-            ],
-            capabilities: [
-                { label: "RTO", value: "< 15 min" },
-                { label: "RPO", value: "< 5 min" }
-            ]
-        },
-        {
-            id: "integrated-security",
-            title: "Integrated Security",
-            description: "Converging physical and digital security systems.",
-            features: [
-                "Access Control Systems",
-                "Video Surveillance Analytics",
                 "Biometric Integration",
                 "Unified Command Center"
             ],

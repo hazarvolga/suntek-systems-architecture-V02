@@ -2,55 +2,42 @@ import { SolutionsPageContent } from "../schema";
 
 export const solutionsContent: SolutionsPageContent = {
     hero: {
-        sysCode: "SYS_SOL",
-        badge: "Technical Solutions",
-        title: "Integrated Systems",
-        description: "End-to-end technical architectures designed for resilience, scalability, and security."
+        sysCode: "SOL_01",
+        title: "Yenilikçi <span class='text-primary'>Çözümler</span>",
+        description: "İş süreçlerinizi dijital çağa taşıyan, verimliliği artıran ve güvenliği sağlayan entegre teknoloji paketleri.",
+        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9yQ5zX8W2F4G3H1J7K6L0M9N5B4V8C3X2Z1"
     },
     items: [
         {
-            id: "infrastructure",
-            title: "Infrastructure & Connectivity",
-            description: "The backbone of modern enterprise. We design and deploy high-availability network fabrics.",
+            id: "dijital-donusum",
+            title: "Dijital Dönüşüm ve Akıllı Sistemler",
+            description: "Demand Solutions DSX ile tedarik zinciri ve üretim optimizasyonu sağlıyor, SAP S/4HANA dönüşüm projeleriyle ERP sistemlerinizi geleceğe taşıyoruz.",
             features: [
-                "Fiber Optic Backbone Design",
-                "Data Center Structured Cabling",
-                "Wireless Mesh Networks (Wi-Fi 6/7)",
-                "5G Private Networks"
+                "DSX Üretim Optimizasyonu",
+                "Talep ve Tedarik Planlama",
+                "SAP S/4HANA Akıllı Dönüşüm Fabrikası",
+                "Veri Görselleştirme",
+                "IBP/S&OP Stratejik Planlama"
             ],
             capabilities: [
-                { label: "Throughput", value: "100 Gbps" },
-                { label: "Latency", value: "< 1ms" }
+                { label: "Proje Süresi", value: "16-24 Hafta" },
+                { label: "Azalma", value: "Stok Maliyeti" }
             ]
         },
         {
-            id: "security",
-            title: "Cyber Security & IAM",
-            description: "Zero-trust security frameworks integrated directly into the physical infrastructure layer.",
+            id: "entegre-guvenlik",
+            title: "Entegre Güvenlik Sistemleri",
+            description: "Kamera, geçiş kontrol, yangın ve alarm sistemlerini tek bir çatı altında topluyoruz. Axis ve çözüm ortaklarımızla akıllı gözetim ve güvenlik sağlıyoruz.",
             features: [
-                "Identity & Access Management (IAM)",
-                "Biometric Access Control",
-                "Perimeter Intrusion Detection",
-                "Video Surveillance Analytics (AI)"
+                "Konuşlandırılabilir Gözetim",
+                "Video Analiz ve İnsan Sayma",
+                "Plaka Tanıma Sistemleri (LPR)",
+                "Çevre ve Alan Güvenliği",
+                "Genel Seslendirme ve Acil Anons"
             ],
             capabilities: [
-                { label: "Encryption", value: "AES-256" },
-                { label: "Monitoring", value: "24/7 SOC" }
-            ]
-        },
-        {
-            id: "automation",
-            title: "Building Automation (BMS)",
-            description: "Smart building ecosystems that optimize energy efficiency and operational workflows.",
-            features: [
-                "HVAC Optimization Algorithms",
-                "Lighting Control Systems (DALI)",
-                "Energy Consumption Analytics",
-                "Predictive Maintenance Sensors"
-            ],
-            capabilities: [
-                { label: "Efficiency", value: "+30%" },
-                { label: "ROI", value: "18 Months" }
+                { label: "Marka", value: "Axis, Milestone" },
+                { label: "Yönetim", value: "Merkezi" }
             ]
         }
     ]
