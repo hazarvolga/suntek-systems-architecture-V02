@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-matte-slate: #0A0A0A;
+  --color-off-white: #F5F5F5;
+  --color-silver: #A0A0A0;
+  --color-grid-line: #1A1A1A;
+
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-sans: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Custom background utilities if needed, though classes usually handle this */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: #0A0A0A;
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+/* Custom Utilities */
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility architectural-filter {
+  filter: grayscale(100%) contrast(140%) brightness(70%);
+}
+
+@utility grid-overlay {
+  background-image: linear-gradient(to right, #1A1A1A 1px, transparent 1px);
 }

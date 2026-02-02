@@ -1,0 +1,299 @@
+[
+  {
+    "id": "anasayfa:_structural_summary_2",
+    "folderName": "anasayfa:_structural_summary_2",
+    "segment": "anasayfa",
+    "type": "structural_summary",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/anasayfa:_structural_summary_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/anasayfa:_structural_summary_2/screen.png"
+  },
+  {
+    "id": "bi̇ze_ulaşin:_contact_&_notices",
+    "folderName": "bi̇ze_ulaşin:_contact_&_notices",
+    "segment": "bi̇ze_ulaşin",
+    "type": "contact_&",
+    "variant": "notices",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/bi̇ze_ulaşin:_contact_&_notices/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/bi̇ze_ulaşin:_contact_&_notices/screen.png"
+  },
+  {
+    "id": "contact:_operational_support",
+    "folderName": "contact:_operational_support",
+    "segment": "contact",
+    "type": "operational",
+    "variant": "support",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact:_operational_support/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact:_operational_support/screen.png"
+  },
+  {
+    "id": "contact_&_campaigns:_functional_interface_1",
+    "folderName": "contact_&_campaigns:_functional_interface_1",
+    "segment": "contact_&_campaigns",
+    "type": "functional_interface",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_1/screen.png"
+  },
+  {
+    "id": "contact_&_campaigns:_functional_interface_2",
+    "folderName": "contact_&_campaigns:_functional_interface_2",
+    "segment": "contact_&_campaigns",
+    "type": "functional_interface",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_2/screen.png"
+  },
+  {
+    "id": "contact_&_campaigns:_functional_interface_3",
+    "folderName": "contact_&_campaigns:_functional_interface_3",
+    "segment": "contact_&_campaigns",
+    "type": "functional_interface",
+    "variant": "3",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_3/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/contact_&_campaigns:_functional_interface_3/screen.png"
+  },
+  {
+    "id": "corporate:_institutional_logic",
+    "folderName": "corporate:_institutional_logic",
+    "segment": "corporate",
+    "type": "institutional",
+    "variant": "logic",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/corporate:_institutional_logic/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/corporate:_institutional_logic/screen.png"
+  },
+  {
+    "id": "hakkımızda:_institutional_timeline_1",
+    "folderName": "hakkımızda:_institutional_timeline_1",
+    "segment": "hakkımızda",
+    "type": "institutional_timeline",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hakkımızda:_institutional_timeline_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hakkımızda:_institutional_timeline_1/screen.png"
+  },
+  {
+    "id": "hakkımızda:_institutional_timeline_2",
+    "folderName": "hakkımızda:_institutional_timeline_2",
+    "segment": "hakkımızda",
+    "type": "institutional_timeline",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hakkımızda:_institutional_timeline_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hakkımızda:_institutional_timeline_2/screen.png"
+  },
+  {
+    "id": "hi̇zmetler:_technical_services_archive",
+    "folderName": "hi̇zmetler:_technical_services_archive",
+    "segment": "hi̇zmetler",
+    "type": "technical_services",
+    "variant": "archive",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hi̇zmetler:_technical_services_archive/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/hi̇zmetler:_technical_services_archive/screen.png"
+  },
+  {
+    "id": "i̇ş_ortaklarımız:_partner_registry_grid_1",
+    "folderName": "i̇ş_ortaklarımız:_partner_registry_grid_1",
+    "segment": "i̇ş_ortaklarımız",
+    "type": "partner_registry_grid",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/i̇ş_ortaklarımız:_partner_registry_grid_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/i̇ş_ortaklarımız:_partner_registry_grid_1/screen.png"
+  },
+  {
+    "id": "i̇ş_ortaklarımız:_partner_registry_grid_2",
+    "folderName": "i̇ş_ortaklarımız:_partner_registry_grid_2",
+    "segment": "i̇ş_ortaklarımız",
+    "type": "partner_registry_grid",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/i̇ş_ortaklarımız:_partner_registry_grid_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/i̇ş_ortaklarımız:_partner_registry_grid_2/screen.png"
+  },
+  {
+    "id": "kurumsal:_institutional_identity",
+    "folderName": "kurumsal:_institutional_identity",
+    "segment": "kurumsal",
+    "type": "institutional",
+    "variant": "identity",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/kurumsal:_institutional_identity/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/kurumsal:_institutional_identity/screen.png"
+  },
+  {
+    "id": "kurumsal:_partner_&_reference_registry",
+    "folderName": "kurumsal:_partner_&_reference_registry",
+    "segment": "kurumsal",
+    "type": "partner_&_reference",
+    "variant": "registry",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/kurumsal:_partner_&_reference_registry/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/kurumsal:_partner_&_reference_registry/screen.png"
+  },
+  {
+    "id": "neden_suntek:_systemic_advantage_layout_1",
+    "folderName": "neden_suntek:_systemic_advantage_layout_1",
+    "segment": "neden_suntek",
+    "type": "systemic_advantage_layout",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/neden_suntek:_systemic_advantage_layout_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/neden_suntek:_systemic_advantage_layout_1/screen.png"
+  },
+  {
+    "id": "neden_suntek:_systemic_advantage_layout_2",
+    "folderName": "neden_suntek:_systemic_advantage_layout_2",
+    "segment": "neden_suntek",
+    "type": "systemic_advantage_layout",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/neden_suntek:_systemic_advantage_layout_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/neden_suntek:_systemic_advantage_layout_2/screen.png"
+  },
+  {
+    "id": "referanslarımız:_registry_interaction_1",
+    "folderName": "referanslarımız:_registry_interaction_1",
+    "segment": "referanslarımız",
+    "type": "registry_interaction",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/referanslarımız:_registry_interaction_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/referanslarımız:_registry_interaction_1/screen.png"
+  },
+  {
+    "id": "referanslarımız:_registry_interaction_2",
+    "folderName": "referanslarımız:_registry_interaction_2",
+    "segment": "referanslarımız",
+    "type": "registry_interaction",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/referanslarımız:_registry_interaction_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/referanslarımız:_registry_interaction_2/screen.png"
+  },
+  {
+    "id": "references:_system_archive",
+    "folderName": "references:_system_archive",
+    "segment": "references",
+    "type": "system",
+    "variant": "archive",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/references:_system_archive/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/references:_system_archive/screen.png"
+  },
+  {
+    "id": "sectors:_vertical_expertise",
+    "folderName": "sectors:_vertical_expertise",
+    "segment": "sectors",
+    "type": "vertical",
+    "variant": "expertise",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sectors:_vertical_expertise/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sectors:_vertical_expertise/screen.png"
+  },
+  {
+    "id": "sektörler:_eğitim_campus_infrastructure_1",
+    "folderName": "sektörler:_eğitim_campus_infrastructure_1",
+    "segment": "sektörler",
+    "type": "eğitim_campus_infrastructure",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_eğitim_campus_infrastructure_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_eğitim_campus_infrastructure_1/screen.png"
+  },
+  {
+    "id": "sektörler:_eğitim_campus_infrastructure_2",
+    "folderName": "sektörler:_eğitim_campus_infrastructure_2",
+    "segment": "sektörler",
+    "type": "eğitim_campus_infrastructure",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_eğitim_campus_infrastructure_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_eğitim_campus_infrastructure_2/screen.png"
+  },
+  {
+    "id": "sektörler:_sağlık_infrastructure_inventory_1",
+    "folderName": "sektörler:_sağlık_infrastructure_inventory_1",
+    "segment": "sektörler",
+    "type": "sağlık_infrastructure_inventory",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_1/screen.png"
+  },
+  {
+    "id": "sektörler:_sağlık_infrastructure_inventory_2",
+    "folderName": "sektörler:_sağlık_infrastructure_inventory_2",
+    "segment": "sektörler",
+    "type": "sağlık_infrastructure_inventory",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_2/screen.png"
+  },
+  {
+    "id": "sektörler:_sağlık_infrastructure_inventory_3",
+    "folderName": "sektörler:_sağlık_infrastructure_inventory_3",
+    "segment": "sektörler",
+    "type": "sağlık_infrastructure_inventory",
+    "variant": "3",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_3/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sağlık_infrastructure_inventory_3/screen.png"
+  },
+  {
+    "id": "sektörler:_sanayi_operational_infrastructure_1",
+    "folderName": "sektörler:_sanayi_operational_infrastructure_1",
+    "segment": "sektörler",
+    "type": "sanayi_operational_infrastructure",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_1/screen.png"
+  },
+  {
+    "id": "sektörler:_sanayi_operational_infrastructure_2",
+    "folderName": "sektörler:_sanayi_operational_infrastructure_2",
+    "segment": "sektörler",
+    "type": "sanayi_operational_infrastructure",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_2/screen.png"
+  },
+  {
+    "id": "sektörler:_sanayi_operational_infrastructure_3",
+    "folderName": "sektörler:_sanayi_operational_infrastructure_3",
+    "segment": "sektörler",
+    "type": "sanayi_operational_infrastructure",
+    "variant": "3",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_3/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sanayi_operational_infrastructure_3/screen.png"
+  },
+  {
+    "id": "sektörler:_sector_infrastructure",
+    "folderName": "sektörler:_sector_infrastructure",
+    "segment": "sektörler",
+    "type": "sector",
+    "variant": "infrastructure",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sector_infrastructure/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/sektörler:_sector_infrastructure/screen.png"
+  },
+  {
+    "id": "service_detail:_siber_güvenlik_interaction_1",
+    "folderName": "service_detail:_siber_güvenlik_interaction_1",
+    "segment": "service_detail",
+    "type": "siber_güvenlik_interaction",
+    "variant": "1",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_1/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_1/screen.png"
+  },
+  {
+    "id": "service_detail:_siber_güvenlik_interaction_2",
+    "folderName": "service_detail:_siber_güvenlik_interaction_2",
+    "segment": "service_detail",
+    "type": "siber_güvenlik_interaction",
+    "variant": "2",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_2/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_2/screen.png"
+  },
+  {
+    "id": "service_detail:_siber_güvenlik_interaction_3",
+    "folderName": "service_detail:_siber_güvenlik_interaction_3",
+    "segment": "service_detail",
+    "type": "siber_güvenlik_interaction",
+    "variant": "3",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_3/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/service_detail:_siber_güvenlik_interaction_3/screen.png"
+  },
+  {
+    "id": "solutions:_knowledge_domains",
+    "folderName": "solutions:_knowledge_domains",
+    "segment": "solutions",
+    "type": "knowledge",
+    "variant": "domains",
+    "htmlPath": "/Users/hazarekiz/Projects/stitch_suntek/Design/solutions:_knowledge_domains/code.html",
+    "imagePath": "/Users/hazarekiz/Projects/stitch_suntek/Design/solutions:_knowledge_domains/screen.png"
+  }
+]
