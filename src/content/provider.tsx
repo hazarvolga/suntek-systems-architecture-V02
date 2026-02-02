@@ -21,8 +21,8 @@ import { projectsContent } from "./pages/projects";
 import { contactContent } from "./pages/contact";
 import { sectorsContent } from "./pages/sectors";
 // Placeholders
+import { solutionsContent } from "./pages/solutions";
 const aboutContent = {} as AboutPageContent;
-const solutionsContent = {} as any; // Temporary untyped until schema updated
 
 interface ContentContextType {
     site: SiteConfig;

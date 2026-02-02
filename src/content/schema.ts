@@ -17,6 +17,11 @@ export interface Button extends Link {
     variant?: "primary" | "secondary" | "outline" | "ghost";
 }
 
+export interface StatItem {
+    label: string;
+    value: string;
+}
+
 // --- Component Schemas ---
 
 export interface HeroSection {
@@ -109,10 +114,7 @@ export interface SectorItem {
     description: string;
     icon?: string;
     features: string[];
-    stats: {
-        label: string;
-        value: string;
-    }[];
+    stats: StatItem[];
 }
 
 export interface SectorsPageContent {

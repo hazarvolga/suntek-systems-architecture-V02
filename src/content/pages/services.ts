@@ -1,4 +1,3 @@
-```typescript
 import { ServicesPageContent } from "../schema";
 
 export const servicesContent: ServicesPageContent = {
@@ -16,27 +15,86 @@ export const servicesContent: ServicesPageContent = {
     },
     items: [
         {
-                "Biometric Integration",
-                "Unified Command Center"
+            id: "ag-guvenligi",
+            title: "Ağ Güvenliği Çözümleri",
+            description: "Suntek olarak, ağ güvenliği konusunda bütüncül bir yaklaşım benimsiyoruz. Güvenlik Duvarı (NGFW), DDoS koruması, SD-WAN ve NAC çözümleriyle işletmenizi siber tehditlere karşı maksimum seviyede koruyoruz.",
+            features: [
+                "Yeni Nesil Güvenlik Duvarı (NGFW)",
+                "DDoS Saldırı Koruma ve Önleme",
+                "SD-WAN ile Güvenli Ağ Yönetimi",
+                "Ağ Erişim Kontrolü (NAC)",
+                "SIEM (Olay Yönetimi ve Loglama)",
+                "PAM (Yetkili Hesap Yönetimi)"
             ],
             capabilities: [
-                { label: "Systems Integrated", value: "100+" },
-                { label: "Sites Secured", value: "50+" }
+                { label: "Partnerler", value: "Fortinet, Sophos" },
+                { label: "Kapsam", value: "L3-L7 Koruma" }
             ]
         },
         {
-            id: "infrastructure",
-            title: "Infrastructure Services",
-            description: "Building the backbone of modern enterprise operations.",
+            id: "backup-recovery",
+            title: "Olağanüstü Durum ve Yedekleme",
+            description: "Küçük bir kesinti bile sizi rekabette dezavantajlı duruma sokabilir. İkincil altyapı masrafı olmadan kritik BT sistemleriniz için bulut yedekleme ve felaket kurtarma planları sunuyoruz.",
             features: [
-                "Data Center Design",
-                "Structured Cabling",
-                "Power Management",
-                "Cooling Systems"
+                "Acronis Siber Koruma ve Yedekleme",
+                "Veeam Backup & Replication",
+                "Sanal ve Fiziksel Sunucu Yedekleme",
+                "Fidye Yazılımı Koruması",
+                "İş Sürekliliği Planlaması"
             ],
             capabilities: [
-                { label: "Projects Delivered", value: "500+" },
-                { label: "Total Capacity", value: "50MW+" }
+                { label: "Partnerler", value: "Veeam, Acronis" },
+                { label: "SLA", value: "99.9% Uptime" }
+            ]
+        },
+        {
+            id: "enerji-altyapi",
+            title: "Enerji ve Altyapı Hizmetleri",
+            description: "İşletmeniz büyüdükçe kablo ve enerji altyapınızın da ölçeklenmesi gerekir. Yapısal kablolama, fiber optik çözümler ve veri merkezi altyapı kurulumları ile kesintisiz iletişim sağlıyoruz.",
+            features: [
+                "Yapısal Kablolama Çözümleri",
+                "Fiber Optik Sonlandırma",
+                "Veri Merkezi Kurulumu",
+                "UPS ve Enerji Altyapısı",
+                "Açık Alan Wi-Fi Projeleri",
+                "CCTV ve Fiziksel Güvenlik Altyapısı"
+            ],
+            capabilities: [
+                { label: "Referans", value: "Vodafone Arena" },
+                { label: "Standart", value: "ISO 27001" }
+            ]
+        },
+        {
+            id: "teknoloji-danismanligi",
+            title: "Teknoloji Danışmanlığı",
+            description: "Kurumsal BT envanterinizin yönetimi, bulut geçişleri ve dijital dönüşüm süreçlerinizde uçtan uca danışmanlık veriyoruz. Sorunlar arızaya dönüşmeden proaktif destek sağlıyoruz.",
+            features: [
+                "Gelişmiş BT Destek Hizmetleri",
+                "Çoklu Bulut Yönetimi",
+                "Sistem Entegrasyonu",
+                "Maliyet Optimizasyonu",
+                "7/24 İzleme ve Destek",
+                "Dış Kaynak (Outsourcing) Kullanımı"
+            ],
+            capabilities: [
+                { label: "Model", value: "Hibrit / On-Prem" },
+                { label: "Odak", value: "Verimlilik" }
+            ]
+        },
+        {
+            id: "egitim-hizmetleri",
+            title: "Eğitim Teknolojileri",
+            description: "Microsoft Eğitim çözümleri ile hibrit öğrenme sınıfları kuruyor, öğretmen ve öğrencilerin dijital yetkinliklerini artırıyoruz. K-12 ve yükseköğretim için modern eğitim araçları sunuyoruz.",
+            features: [
+                "Microsoft Teams Eğitim Entegrasyonu",
+                "Hibrit Sınıf Kurulumu",
+                "Office 365 Eğitimleri",
+                "Uzaktan Eğitim Altyapısı",
+                "LMS Entegrasyonları"
+            ],
+            capabilities: [
+                { label: "Partner", value: "Microsoft Edu" },
+                { label: "Kitle", value: "K-12, Üniversite" }
             ]
         }
     ]
