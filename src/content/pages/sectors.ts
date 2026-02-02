@@ -10,14 +10,13 @@ export const sectorsContent: SectorsPageContent = {
     items: [
         {
             id: "saglik-ve-yasam",
-            title: "Sağlık Hizmetleri ve Yaşam Birimleri",
+            title: "Sağlık ve Yaşam",
             description: "Modern sağlık sistemi için dijital dönüşümü hızlandırıyor, hasta verilerini ve hastane süreçlerini yapay zeka ile optimize ediyoruz.",
             features: [
-                "Big Data Akıllı Veri Depolama (Röntgen/MR)",
-                "Tekno SOS - Acil Yaşlı Bakım Çağrı Sistemi",
-                "Laboratuvar Isı Takip ve Soğuk Zincir",
-                "Tekno Room Mate (Hasta Bilgilendirme)",
-                "Azot Tankı ve Genetik Materyal Takibi"
+                "Big Data Akıllı Veri Depolama",
+                "Tekno SOS - Acil Çağrı Sistemi",
+                "Laboratuvar Isı Takip",
+                "Hasta Bilgilendirme Sistemleri"
             ],
             stats: [
                 { label: "Veri Güvenliği", value: "KVKK/HIPAA" },
@@ -30,10 +29,9 @@ export const sectorsContent: SectorsPageContent = {
             description: "Geleceğin fabrikalarını kuruyoruz. Üretim süreçlerini otonom hale getiriyor, robotik ve yapay zeka ile verimliliği artırıyoruz.",
             features: [
                 "Akıllı Fabrika Dönüşümü",
-                "IIoT (Endüstriyel Nesnelerin İnterneti)",
-                "M2M (Makineden Makineye İletişim)",
-                "Siber-Fiziksel Sistemler",
-                "Kestirimci Bakım Algoritmaları"
+                "IIoT ve M2M İletişim",
+                "Kestirimci Bakım",
+                "Siber-Fiziksel Sistemler"
             ],
             stats: [
                 { label: "Verim Artışı", value: "%30+" },
@@ -41,18 +39,18 @@ export const sectorsContent: SectorsPageContent = {
             ]
         },
         {
-            id: "egitim-sektoru",
+            id: "egitim-kurumlari",
             title: "Eğitim Kurumları",
-            description: "Okul ve üniversiteler için uzaktan eğitim, hibrit sınıf ve kampüs güvenlik teknolojileri sağlıyoruz.",
+            description: "Okul ve üniversiteler için Microsoft tabanlı hibrit öğrenme, uzaktan eğitim ve kampüs güvenlik teknolojileri sağlıyoruz.",
             features: [
-                "Hibrit Öğrenme Modelleri",
-                "Kampüs Kart ve Geçiş Sistemleri",
-                "Akıllı Tahta ve Sınıf Teknolojileri",
-                "Öğrenci Bilgi Sistemleri Entegrasyonu"
+                "Microsoft Teams Entegrasyonu",
+                "Hibrit Sınıf Kurulumu",
+                "Office 365 Eğitimleri",
+                "LMS (Öğrenim Yönetim Sistemi)"
             ],
             stats: [
-                { label: "Erişilebilirlik", value: "7/24" },
-                { label: "Entegrasyon", value: "Tam" }
+                { label: "Partner", value: "Microsoft Edu" },
+                { label: "Kitle", value: "K-12" }
             ]
         }
     ]

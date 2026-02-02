@@ -15,16 +15,44 @@ export const servicesContent: ServicesPageContent = {
     },
     items: [
         {
+            id: "dijital-donusum",
+            title: "Dijital Dönüşüm ve Akıllı Sistemler",
+            description: "Demand Solutions DSX ile tedarik zinciri ve üretim optimizasyonu sağlıyor, SAP S/4HANA dönüşüm projeleriyle ERP sistemlerinizi geleceğe taşıyoruz.",
+            features: [
+                "DSX Üretim Optimizasyonu",
+                "Talep ve Tedarik Planlama",
+                "SAP S/4HANA Akıllı Dönüşüm",
+                "IBP/S&OP Stratejik Planlama"
+            ],
+            capabilities: [
+                { label: "Proje Süresi", value: "16-24 Hafta" },
+                { label: "Azalma", value: "Stok Maliyeti" }
+            ]
+        },
+        {
+            id: "teknoloji-danismanligi",
+            title: "Teknoloji Danışmanlığı Hizmetleri",
+            description: "Kurumsal BT envanterinizin yönetimi, bulut geçişleri ve dijital dönüşüm süreçlerinizde uçtan uca danışmanlık veriyoruz.",
+            features: [
+                "Gelişmiş BT Destek Hizmetleri",
+                "Çoklu Bulut Yönetimi",
+                "Sistem Entegrasyonu",
+                "Maliyet Optimizasyonu"
+            ],
+            capabilities: [
+                { label: "Model", value: "Hibrit / On-Prem" },
+                { label: "Odak", value: "Verimlilik" }
+            ]
+        },
+        {
             id: "ag-guvenligi",
             title: "Ağ Güvenliği Çözümleri",
-            description: "Suntek olarak, ağ güvenliği konusunda bütüncül bir yaklaşım benimsiyoruz. Güvenlik Duvarı (NGFW), DDoS koruması, SD-WAN ve NAC çözümleriyle işletmenizi siber tehditlere karşı maksimum seviyede koruyoruz.",
+            description: "Yeni nesil güvenlik duvarı (NGFW), DDoS koruması, SD-WAN ve NAC çözümleriyle işletmenizi siber tehditlere karşı maksimum seviyede koruyoruz.",
             features: [
                 "Yeni Nesil Güvenlik Duvarı (NGFW)",
-                "DDoS Saldırı Koruma ve Önleme",
-                "SD-WAN ile Güvenli Ağ Yönetimi",
-                "Ağ Erişim Kontrolü (NAC)",
-                "SIEM (Olay Yönetimi ve Loglama)",
-                "PAM (Yetkili Hesap Yönetimi)"
+                "DDoS Saldırı Koruma",
+                "SD-WAN Yönetimi",
+                "Ağ Erişim Kontrolü (NAC)"
             ],
             capabilities: [
                 { label: "Partnerler", value: "Fortinet, Sophos" },
@@ -33,12 +61,11 @@ export const servicesContent: ServicesPageContent = {
         },
         {
             id: "backup-recovery",
-            title: "Olağanüstü Durum ve Yedekleme",
-            description: "Küçük bir kesinti bile sizi rekabette dezavantajlı duruma sokabilir. İkincil altyapı masrafı olmadan kritik BT sistemleriniz için bulut yedekleme ve felaket kurtarma planları sunuyoruz.",
+            title: "Olağanüstü Durum ve Yedekleme Çözümleri",
+            description: "Kritik BT sistemleriniz için bulut yedekleme ve felaket kurtarma planları sunarak iş sürekliliğinizi garanti altına alıyoruz.",
             features: [
-                "Acronis Siber Koruma ve Yedekleme",
+                "Acronis Siber Koruma",
                 "Veeam Backup & Replication",
-                "Sanal ve Fiziksel Sunucu Yedekleme",
                 "Fidye Yazılımı Koruması",
                 "İş Sürekliliği Planlaması"
             ],
@@ -48,53 +75,33 @@ export const servicesContent: ServicesPageContent = {
             ]
         },
         {
-            id: "enerji-altyapi",
-            title: "Enerji ve Altyapı Hizmetleri",
-            description: "İşletmeniz büyüdükçe kablo ve enerji altyapınızın da ölçeklenmesi gerekir. Yapısal kablolama, fiber optik çözümler ve veri merkezi altyapı kurulumları ile kesintisiz iletişim sağlıyoruz.",
+            id: "entegre-guvenlik",
+            title: "Entegre Güvenlik Sistemleri",
+            description: "Kamera, geçiş kontrol, yangın ve alarm sistemlerini tek bir çatı altında toplayarak akıllı gözetim ve güvenlik sağlıyoruz.",
             features: [
-                "Yapısal Kablolama Çözümleri",
+                "Konuşlandırılabilir Gözetim",
+                "Video Analiz ve İnsan Sayma",
+                "Plaka Tanıma (LPR)",
+                "Çevre Güvenliği"
+            ],
+            capabilities: [
+                { label: "Marka", value: "Axis, Milestone" },
+                { label: "Yönetim", value: "Merkezi" }
+            ]
+        },
+        {
+            id: "altyapi-hizmetleri",
+            title: "Altyapı Hizmetleri",
+            description: "Yapısal kablolama, fiber optik çözümler ve veri merkezi altyapı kurulumları ile kesintisiz iletişim altyapısı kuruyoruz.",
+            features: [
+                "Yapısal Kablolama",
                 "Fiber Optik Sonlandırma",
                 "Veri Merkezi Kurulumu",
-                "UPS ve Enerji Altyapısı",
-                "Açık Alan Wi-Fi Projeleri",
-                "CCTV ve Fiziksel Güvenlik Altyapısı"
+                "UPS ve Enerji Altyapısı"
             ],
             capabilities: [
                 { label: "Referans", value: "Vodafone Arena" },
                 { label: "Standart", value: "ISO 27001" }
-            ]
-        },
-        {
-            id: "teknoloji-danismanligi",
-            title: "Teknoloji Danışmanlığı",
-            description: "Kurumsal BT envanterinizin yönetimi, bulut geçişleri ve dijital dönüşüm süreçlerinizde uçtan uca danışmanlık veriyoruz. Sorunlar arızaya dönüşmeden proaktif destek sağlıyoruz.",
-            features: [
-                "Gelişmiş BT Destek Hizmetleri",
-                "Çoklu Bulut Yönetimi",
-                "Sistem Entegrasyonu",
-                "Maliyet Optimizasyonu",
-                "7/24 İzleme ve Destek",
-                "Dış Kaynak (Outsourcing) Kullanımı"
-            ],
-            capabilities: [
-                { label: "Model", value: "Hibrit / On-Prem" },
-                { label: "Odak", value: "Verimlilik" }
-            ]
-        },
-        {
-            id: "egitim-hizmetleri",
-            title: "Eğitim Teknolojileri",
-            description: "Microsoft Eğitim çözümleri ile hibrit öğrenme sınıfları kuruyor, öğretmen ve öğrencilerin dijital yetkinliklerini artırıyoruz. K-12 ve yükseköğretim için modern eğitim araçları sunuyoruz.",
-            features: [
-                "Microsoft Teams Eğitim Entegrasyonu",
-                "Hibrit Sınıf Kurulumu",
-                "Office 365 Eğitimleri",
-                "Uzaktan Eğitim Altyapısı",
-                "LMS Entegrasyonları"
-            ],
-            capabilities: [
-                { label: "Partner", value: "Microsoft Edu" },
-                { label: "Kitle", value: "K-12, Üniversite" }
             ]
         }
     ]

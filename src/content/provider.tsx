@@ -10,7 +10,10 @@ import {
     ContactPageContent,
     ProjectsPageContent,
     SectorsPageContent,
-    SolutionsPageContent
+    SolutionsPageContent,
+    CareersPageContent,
+    LegalPageContent,
+    CampaignsPageContent
 } from "./schema";
 
 import { siteConfig } from "./site-config";
@@ -20,9 +23,12 @@ import { servicesContent } from "./pages/services";
 import { projectsContent } from "./pages/projects";
 import { contactContent } from "./pages/contact";
 import { sectorsContent } from "./pages/sectors";
-// Placeholders
 import { solutionsContent } from "./pages/solutions";
-const aboutContent = {} as AboutPageContent;
+import { careersContent } from "./pages/careers";
+import { legalContent } from "./pages/legal";
+import { campaignsContent } from "./pages/campaigns";
+
+const aboutContent = {} as AboutPageContent; // Placeholder for now
 
 interface ContentContextType {
     site: SiteConfig;
@@ -34,6 +40,9 @@ interface ContentContextType {
     sectors: SectorsPageContent;
     contact: ContactPageContent;
     solutions: SolutionsPageContent;
+    careers: CareersPageContent;
+    legal: LegalPageContent;
+    campaigns: CampaignsPageContent;
 }
 
 const ContentContext = createContext<ContentContextType | undefined>(undefined);
@@ -48,7 +57,10 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
         projects: projectsContent,
         sectors: sectorsContent,
         contact: contactContent,
-        solutions: solutionsContent
+        solutions: solutionsContent,
+        careers: careersContent,
+        legal: legalContent,
+        campaigns: campaignsContent
     };
 
     return (

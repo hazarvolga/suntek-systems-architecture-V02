@@ -147,6 +147,58 @@ export interface SolutionsPageContent {
     items: SolutionItem[];
 }
 
+export interface JobItem {
+    title: string;
+    location: string;
+    date: string;
+    link: string;
+}
+
+export interface CareersPageContent {
+    hero: HeroSection;
+    intro: {
+        title: string;
+        content: string; // Markdown
+    };
+    policies: FeatureItem[]; // For Performance, Education, etc.
+    openPositions: {
+        title: string; // "Açık Pozisyonlar"
+        items: JobItem[];
+    };
+    images: {
+        performance: string;
+        education: string;
+        career: string;
+        salary: string;
+    };
+}
+
+export interface LegalPageContent {
+    privacy: {
+        title: string;
+        slug: string;
+        content: string; // Markdown
+    };
+    cookies: {
+        title: string;
+        slug: string;
+        content: string; // Markdown
+    };
+}
+
+export interface CampaignItem {
+    slug: string;
+    title: string;
+    image: string;
+    content: string; // Markdown link or summary
+    link: string;
+}
+
+export interface CampaignsPageContent {
+    hero: HeroSection;
+    items: CampaignItem[];
+}
+
 // --- Global Config ---
 
 export interface SiteConfig {

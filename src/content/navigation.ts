@@ -2,42 +2,44 @@ import { NavigationConfig } from "./schema";
 
 export const navigation: NavigationConfig = {
     header: [
-        { label: "Home", href: "/" },
-        { label: "About", href: "/about" },
-        { label: "Services", href: "/services" },
-        { label: "Projects", href: "/projects" },
-        { label: "Sectors", href: "/sectors" },
-        { label: "Partners", href: "/partners" },
-        { label: "Contact", href: "/contact" }
+        { label: "Anasayfa", href: "/" },
+        { label: "Hakkımızda", href: "/about" },
+        { label: "Hizmetler", href: "/services" },
+        { label: "Çözümler", href: "/solutions" },
+        { label: "Sektörler", href: "/sectors" },
+        { label: "Kariyer", href: "/careers" },
+        { label: "İletişim", href: "/contact" }
     ],
     footer: {
         columns: [
             {
-                title: "Company",
+                title: "Kurumsal",
                 links: [
-                    { label: "About Us", href: "/about" },
-                    { label: "Careers", href: "/careers" },
-                    { label: "News", href: "/news" }
+                    { label: "Hakkımızda", href: "/about" },
+                    { label: "Kariyer", href: "/careers" },
+                    { label: "Kampanyalar", href: "/campaigns" },
+                    { label: "Partnerler", href: "/partners" }
                 ]
             },
             {
-                title: "Services",
+                title: "Hizmetler",
                 links: [
-                    { label: "Digital Transformation", href: "/services#digital-transformation" },
-                    { label: "Infrastructure", href: "/services#infrastructure" },
-                    { label: "Cyber Security", href: "/services#integrated-security" }
+                    { label: "Dijital Dönüşüm", href: "/services#dijital-donusum" },
+                    { label: "Ağ Güvenliği", href: "/services#ag-guvenligi" },
+                    { label: "Enerji ve Altyapı", href: "/services#enerji-altyapi" },
+                    { label: "Danışmanlık", href: "/services#teknoloji-danismanligi" }
                 ]
             },
             {
-                title: "Legal",
+                title: "Yasal",
                 links: [
-                    { label: "Privacy Policy", href: "/privacy" },
-                    { label: "Terms of Service", href: "/terms" }
+                    { label: "Gizlilik Politikası", href: "/legal/privacy" },
+                    { label: "Çerez Politikası", href: "/legal/cookies" }
                 ]
             }
         ],
         bottomLinks: [
-            { label: "Sitemap", href: "/sitemap" }
+            { label: "Sitemap", href: "/sitemap.xml" }
         ]
     }
 };
