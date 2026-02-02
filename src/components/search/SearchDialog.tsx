@@ -65,14 +65,12 @@ export function SearchDialog() {
         <>
             <button
                 onClick={() => setOpen(true)}
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 relative w-full justify-start text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
+                className="inline-flex items-center justify-between w-full h-8 rounded-none border border-grid-line/50 bg-matte-black/50 px-3 text-[10px] text-silver font-mono hover:border-primary/50 transition-colors"
             >
-                <span className="hidden lg:inline-flex">Ara...</span>
-                <span className="inline-flex lg:hidden">Ara</span>
-                <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+                <span className="opacity-50">Ara...</span>
+                <div className="flex items-center gap-1 opacity-30">
                     <span className="text-xs">⌘</span>K
-                </kbd>
-                <Search className="ml-auto h-4 w-4 md:hidden" />
+                </div>
             </button>
             <CommandDialog open={open} onOpenChange={setOpen}>
                 <CommandInput placeholder="Ne aramak istiyorsunuz? (Örn: Firewall, Kariyer...)" value={query} onValueChange={setQuery} />

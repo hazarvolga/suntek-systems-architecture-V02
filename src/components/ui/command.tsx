@@ -25,20 +25,22 @@ const Command = React.forwardRef<
 ))
 Command.displayName = CommandPrimitive.displayName
 
-interface CommandDialogProps extends React.ComponentPropsWithoutRef<typeof CommandPrimitive.Dialog> { }
+import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog"
+
+interface CommandDialogProps extends React.ComponentPropsWithoutRef<typeof Dialog> { }
 
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
     return (
-        <CommandPrimitive.Dialog
-            {...props}
-            className="fixed inset-0 z-50 flex items-start justify-center pt-[20vh] bg-black/80 backdrop-blur-sm transition-all duration-200"
-        >
-            <div className="w-full max-w-2xl overflow-hidden rounded-xl border border-grid-line bg-matte-black shadow-2xl animate-in fade-in zoom-in-95 duration-200">
-                <Command className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-silver [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-14 [&_[cmdk-item]]:px-4 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
-                    {children}
-                </Command>
-            </div>
-        </CommandPrimitive.Dialog>
+        <Dialog {...props}>
+            <DialogContent className="fixed inset-0 z-50 flex items-start justify-center pt-[20vh] bg-black/80 backdrop-blur-sm transition-all duration-200">
+                <div className="w-full max-w-2xl overflow-hidden rounded-xl border border-grid-line bg-matte-black shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+                    <DialogTitle className="sr-only">Arama</DialogTitle>
+                    <Command className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-silver [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-14 [&_[cmdk-item]]:px-4 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
+                        {children}
+                    </Command>
+                </div>
+            </DialogContent>
+        </Dialog>
     )
 }
 
