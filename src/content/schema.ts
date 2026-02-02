@@ -35,6 +35,7 @@ export interface FeatureItem {
     description: string;
     sysCode?: string; // e.g. SCTR_ED-01
     image?: string; // For sector cards
+    href?: string; // For navigation
 }
 
 export interface FeaturesSection {
@@ -151,6 +152,11 @@ export interface SiteConfig {
     description: string;
     url: string;
     ogImage: string;
+    logo: {
+        url: string;
+        alt: string;
+        href: string;
+    };
     socials: {
         twitter?: string;
         github?: string;

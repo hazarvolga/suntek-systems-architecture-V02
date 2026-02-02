@@ -2,6 +2,7 @@
 
 import { useContent } from "@/content/provider";
 import Link from "next/link";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
     const { nav, site } = useContent();
@@ -52,10 +53,28 @@ export default function Footer() {
                             <p className="text-xs font-mono text-silver">+90 212 555 00 00</p>
                         </div>
                         <div className="flex gap-4">
-                            <div className="size-12 border border-grid-line flex items-center justify-center grayscale opacity-40 hover:opacity-100 hover:border-primary transition-all group cursor-pointer">
+                            {/* Social Icons */}
+                            {site.socials.github && (
+                                <Link href={site.socials.github} target="_blank" className="size-12 border border-grid-line flex items-center justify-center text-silver/40 hover:text-primary hover:border-primary transition-all group">
+                                    <Github className="size-5" />
+                                </Link>
+                            )}
+                            {site.socials.twitter && (
+                                <Link href={site.socials.twitter} target="_blank" className="size-12 border border-grid-line flex items-center justify-center text-silver/40 hover:text-primary hover:border-primary transition-all group">
+                                    <Twitter className="size-5" />
+                                </Link>
+                            )}
+                            {site.socials.linkedin && (
+                                <Link href={site.socials.linkedin} target="_blank" className="size-12 border border-grid-line flex items-center justify-center text-silver/40 hover:text-primary hover:border-primary transition-all group">
+                                    <Linkedin className="size-5" />
+                                </Link>
+                            )}
+
+                            {/* Certifications (Visual) */}
+                            <div className="size-12 border border-grid-line flex items-center justify-center grayscale opacity-40 hover:opacity-100 hover:border-primary transition-all group cursor-pointer" title="ISO Certification">
                                 <span className="text-[9px] font-mono group-hover:text-primary">ISO</span>
                             </div>
-                            <div className="size-12 border border-grid-line flex items-center justify-center grayscale opacity-40 hover:opacity-100 hover:border-primary transition-all group cursor-pointer">
+                            <div className="size-12 border border-grid-line flex items-center justify-center grayscale opacity-40 hover:opacity-100 hover:border-primary transition-all group cursor-pointer" title="BIM Certified">
                                 <span className="text-[9px] font-mono group-hover:text-primary">BIM</span>
                             </div>
                         </div>

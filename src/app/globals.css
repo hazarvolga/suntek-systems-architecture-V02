@@ -23,10 +23,15 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: #0A0A0A;
   font-family: var(--font-space-grotesk), sans-serif;
+  overflow-x: hidden;
 }
 
 /* Custom Utilities */

@@ -20,22 +20,25 @@ export const homeContent: HomePageContent = {
         heading: "Active Sectors",
         items: [
             {
-                sysCode: "SCTR_ED-01",
-                title: "EDUCATION",
-                description: "Complex academic environments requiring high-span structural stability and acoustic isolation frameworks.",
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkUR3TVcdxA41R2XDwH9VlKwEyLtj4LZLPl9_lJSyfrvWPK0_vvere1__dwX72tFpej7-h2JMGomgkGHxsPInPq6oJFCBzEQO78jlz_4SJvbYtPud0xnPE5C79bhzG7RrJZqnsi6ZCCt_33IMCmZi8PajXLFm-2-yDzi6-_Vu6jDBOvdIMLSECHUAYDzcBfxe3JK0Pv__Z17ywcRdVAOyLz_B_qqwDKpq_E6bEuTLXKxrTvgh38x1eRITAEkVLR7LGuo2KrOW17QGh"
-            },
-            {
-                sysCode: "SCTR_HC-02",
+                sysCode: "SCTR_HC-01",
                 title: "HEALTHCARE",
                 description: "Clean-room compliant frameworks with integrated vibration control for high-precision surgical suites.",
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgsLXXW1NIFB3WL5-eINt7wn9GBokI-iAvPe_XhrEhMSFRZ2tCTjfsu6grUIs5crwNltPGIH0wLrgNvMxRFA3Eol8sBd9alDCrzw-gi8q_9T-6RK8qsMfL7Anyq3tQ3xEIvFpqDFUZiSTEwndr9G_eMIDqiTrwJltVEaXnpKuvBvlzwsDMqdCnlBmm7IJyd1XsSofa6zEJunZ68OXXWS-UsWMTJ4gY6x3L2ue65NGg6O0EwQhMftLnCAJ6Utfrk9n7c0gYAd2APqUr"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgsLXXW1NIFB3WL5-eINt7wn9GBokI-iAvPe_XhrEhMSFRZ2tCTjfsu6grUIs5crwNltPGIH0wLrgNvMxRFA3Eol8sBd9alDCrzw-gi8q_9T-6RK8qsMfL7Anyq3tQ3xEIvFpqDFUZiSTEwndr9G_eMIDqiTrwJltVEaXnpKuvBvlzwsDMqdCnlBmm7IJyd1XsSofa6zEJunZ68OXXWS-UsWMTJ4gY6x3L2ue65NGg6O0EwQhMftLnCAJ6Utfrk9n7c0gYAd2APqUr",
+                href: "/sectors#healthcare"
+            },
+            {
+                sysCode: "SCTR_ED-02",
+                title: "EDUCATION",
+                description: "Complex academic environments requiring high-span structural stability and acoustic isolation frameworks.",
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkUR3TVcdxA41R2XDwH9VlKwEyLtj4LZLPl9_lJSyfrvWPK0_vvere1__dwX72tFpej7-h2JMGomgkGHxsPInPq6oJFCBzEQO78jlz_4SJvbYtPud0xnPE5C79bhzG7RrJZqnsi6ZCCt_33IMCmZi8PajXLFm-2-yDzi6-_Vu6jDBOvdIMLSECHUAYDzcBfxe3JK0Pv__Z17ywcRdVAOyLz_B_qqwDKpq_E6bEuTLXKxrTvgh38x1eRITAEkVLR7LGuo2KrOW17QGh",
+                href: "/sectors#education"
             },
             {
                 sysCode: "SCTR_IN-03",
-                title: "INDUSTRY",
+                title: "INDUSTRIAL & MANUFACTURING",
                 description: "Heavy industrial skeletons engineered for dynamic loads and extreme material durability in corrosive settings.",
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDXkLnGCy_6Uo9gUglFliXTxWoZyfi63kH4EdBn0KEfKTIsx88yyUv_WP6t4VncSf7NOJR-ZgmQtKpRJBQIBQ4fW7ACyiKm4hutMayswD-HB5IBAo_0E6Vr3N10WntNpXlyZ7WZ7XcqdnrqEsblQpM_vE3h1Z4D2aZ-Fk00TdIUmhovEG49YWl4unmPFYzdBXrPZsFAOY-OMvKi_k8WDgQPzpWZhs-n2swBfMJoWJj_ZsvX-etILDnz1tnvxKGvGnsm36z5T61Zcv3F"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDXkLnGCy_6Uo9gUglFliXTxWoZyfi63kH4EdBn0KEfKTIsx88yyUv_WP6t4VncSf7NOJR-ZgmQtKpRJBQIBQ4fW7ACyiKm4hutMayswD-HB5IBAo_0E6Vr3N10WntNpXlyZ7WZ7XcqdnrqEsblQpM_vE3h1Z4D2aZ-Fk00TdIUmhovEG49YWl4unmPFYzdBXrPZsFAOY-OMvKi_k8WDgQPzpWZhs-n2swBfMJoWJj_ZsvX-etILDnz1tnvxKGvGnsm36z5T61Zcv3F",
+                href: "/sectors#industry"
             }
         ]
     },
