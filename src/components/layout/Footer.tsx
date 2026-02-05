@@ -7,6 +7,10 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 export default function Footer() {
     const { nav, site } = useContent();
 
+    if (!site || !nav) {
+        return null;
+    }
+
     return (
         <footer className="relative z-10 bg-black/40 border-t border-grid-line py-20">
             <div className="max-w-7xl mx-auto px-6">

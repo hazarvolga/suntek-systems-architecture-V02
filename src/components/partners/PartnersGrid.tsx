@@ -11,101 +11,16 @@ import {
     ExternalLink
 } from "lucide-react";
 
-const partners = [
-    {
-        id: "01",
-        name: "HEWLETT PACKARD",
-        tier: "PLATINUM_DIRECT",
-        level: "TIER_1",
-        core: "HYBRID_INFRA",
-        category: "INFRASTRUCTURE",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuBqY5djykPAAXyVKoIdizWJm3PEiEiiTkYIfk7tmrLwZFgXK6jttNgRZZE31nei3ZGAge2-6V1SNP3dhFm033ukJbXzmzPDSRJRtErKXxGcvjtG9nG0PrVyRWoFtwuFp1pSwVh77Mc0-RBnAjcluuHcI9he0beqPd8Bse1Nrbr7D_0m18wx5OCqLSf_Ejr8RqE_lqQAeVdYrL_K1SYjhrBupLPOsCnhp3067PrcDNUmdoIzuTlKUCz5ab_JicF32Rx45RIwWio1EMsM",
-        specs: [
-            { icon: Activity, label: "Server Infrastructure" },
-            { icon: Cpu, label: "HPC Clusters" },
-            { icon: Database, label: "Storage Solutions" }
-        ],
-        modId: "HP_SPEC_880"
-    },
-    {
-        id: "02",
-        name: "CISCO SYSTEMS",
-        tier: "GOLD_INTEGRATOR",
-        level: "",
-        core: "NET_FABRIC",
-        category: "INFRASTRUCTURE",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuBqKGsS4Tz98q3AdPecjLj8ER-11WN3r8Ofq25h4_rWSlZKjzZW21g27E-bgxtKbDvgmQhDB11skbVPgMoRESaswSjKGj21IOgGM4DnZhCZPgmOr35aGuayvI52-XLWg1m9Bov4tTqVCZLrX0OECAVhcLq8MNxV2Z7VCqlwqtpQgR5x1E7nZMMi1JaxyxXklRtOQM96WC5vCZtJ1zBw70yDX-cUy2qLohpPffiV__PP-1f5Ru9GX92LXqCzu07gv2PEnEuxB96cpbCc",
-        specs: [
-            { icon: Server, label: "Enterprise Switching" },
-            { icon: Shield, label: "Network Security" },
-            { icon: Cloud, label: "SDN Controllers" }
-        ],
-        modId: "CS_SPEC_412"
-    },
-    {
-        id: "03",
-        name: "DELL TECHNOLOGIES",
-        tier: "PLATINUM_DIRECT",
-        level: "TIER_1",
-        core: "COMPUTE_SCALE",
-        category: "INFRASTRUCTURE",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuBt2iIJTurXPDtHLGAIDY-72AJWIi43TVthYLfa6E89y4LGTBZ3RJRJvd4Ciib1_tRFiNXmoWwyso9N44Ut2D4_QKWCLnIPdkiuEcRa81wJIOvyhfHB6duWO_Rh-Lwo7J7zWM_ZmFDPURrn03pV29qtj9cLQyZ2tnBgIdEZoXAQrw0MRvx9-ePfcKO_Quksami3tOFzsb73oaZ7uk6bnSulF8tsCx0JNg9Fx-zQ9F6OBbR9p9GZzRuTmSGRNA1cHaaoXYGFztSGbUN9",
-        specs: [
-            { icon: Cpu, label: "Enterprise Computing" },
-            { icon: Database, label: "Data Center Storage" },
-            { icon: Server, label: "Virtualization" }
-        ],
-        modId: "DL_SPEC_909"
-    },
-    {
-        id: "04",
-        name: "FORTINET",
-        tier: "EXPERT_PARTNER",
-        level: "",
-        core: "SEC_OVERLAY",
-        category: "SECURITY_LAYER",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbfrlXURn-hiS3ENRortVls2xbFD_Rg3f5XCtTHAkKVPM3gFRqzKRGGGO0KZ5GBF4fowtniaxLolc7oKXg1R3WxJp-d49MG_r06jlsyIWhzNK1e7x0DI-FlvX58vIPRNQ4GiIlvFUHruc7s4VVEQ2ts-YPiErpbFPneA5UEydEM4rSgSCcxmgCP22Scj7aHE4v1joJFvZKQwbWLWEUU_1_BnU9mehnMNz54bOFGljBsKTm6tDZnueEmyn-ndOQJa0aT25FZ5fCRyzA",
-        specs: [
-            { icon: Shield, label: "Network Security" },
-            { icon: Cloud, label: "Cloud Firewall" },
-            { icon: Shield, label: "Zero Trust Access" }
-        ],
-        modId: "FT_SPEC_001"
-    },
-    {
-        id: "05",
-        name: "MICROSOFT AZURE",
-        tier: "CLOUD_SOLUTIONS",
-        level: "",
-        core: "AZ_HYBRID",
-        category: "INFRASTRUCTURE",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiqBVjD1-zjLFSTSNI8NxO2OvDuVnNJI3J3gvc7K61i2zWIDmYonvDks5LbULZCWewSK9vwC-bWjt6EeXv0EMWz0Vm5wbU3RQHNVmsENkyO6q4Cje8XWmwqVaQ6G8S5DUCosL86akXwstw_6mN375ufN_4X2yBvqTXOg6EzntEJLIuaBxcn6RwfnV0SViVVl_DYiUjL2-ZzCGtKMowFRhPitPXH51jDa4WELt6NTJJ12hutPKXnCUlv8V0BCf6Y5vv3B1jB_dfhhRR",
-        specs: [
-            { icon: Cloud, label: "Hybrid Cloud Infra" },
-            { icon: Server, label: "Managed Services" },
-            { icon: Cpu, label: "Data & AI" }
-        ],
-        modId: "MS_SPEC_771"
-    },
-    {
-        id: "06",
-        name: "VMWARE",
-        tier: "PRINCIPAL_PARTNER",
-        level: "",
-        core: "VIRT_FABRIC",
-        category: "INFRASTRUCTURE",
-        logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqLiApxdRXTSsgzjgEEWoLJIamvI4yla9qPiZtBV12wNLlTr96igYXtU47qbGuRWR7pECF4qZC3pikegqrR9sjPfGgnx-WNoLKEtUEjfV4sqFowmDa6tKrRROKfyyYrvRLUGBwTXa0ddSmg9JHLkg065_G4LkdO2IXWQ1scbdl0h3n4TgSxYWd7SbsK706kA0BcLT3tWStrgKWyUvwgZa3ICKuf-gUouFt8MI-DAJR5p6-ZZ8QFzJXzJI_33kXATTXlyiTLluKYl1c",
-        specs: [
-            { icon: Server, label: "vSphere Management" },
-            { icon: Cloud, label: "NSX Virtualization" },
-            { icon: Database, label: "Cloud Foundation" }
-        ],
-        modId: "VM_SPEC_102"
-    }
-];
+import { useContent } from "@/content/provider";
+import * as LucideIcons from "lucide-react";
 
 export default function PartnersGrid() {
+    const { partners: partnersData } = useContent();
     const [activeFilter, setActiveFilter] = useState("ALL_MODULES");
+
+    if (!partnersData) return null;
+
+    const partners = partnersData.items;
 
     const filteredPartners = activeFilter === "ALL_MODULES"
         ? partners
@@ -121,8 +36,8 @@ export default function PartnersGrid() {
                             key={filter}
                             onClick={() => setActiveFilter(filter)}
                             className={`text-[10px] font-bold uppercase tracking-widest px-6 py-2.5 rounded transition-all ${activeFilter === filter
-                                    ? "bg-primary text-white shadow-[0_0_15px_rgba(13,89,242,0.3)]"
-                                    : "bg-white/5 border border-white/10 text-silver/50 hover:text-white hover:border-primary/50"
+                                ? "bg-primary text-white shadow-[0_0_15px_rgba(13,89,242,0.3)]"
+                                : "bg-white/5 border border-white/10 text-silver/50 hover:text-white hover:border-primary/50"
                                 }`}
                         >
                             {filter}
@@ -181,12 +96,15 @@ export default function PartnersGrid() {
                                     <span className="text-silver/60">{partner.core}</span>
                                 </div>
                                 <ul className="text-silver/50 text-[11px] font-mono space-y-3 uppercase">
-                                    {partner.specs.map((spec, i) => (
-                                        <li key={i} className="flex items-center gap-3">
-                                            <spec.icon className="size-3.5 text-primary" />
-                                            {spec.label}
-                                        </li>
-                                    ))}
+                                    {partner.specs.map((spec, i) => {
+                                        const Icon = (LucideIcons as any)[spec.icon] || LucideIcons.Activity;
+                                        return (
+                                            <li key={i} className="flex items-center gap-3">
+                                                <Icon className="size-3.5 text-primary" />
+                                                {spec.label}
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>

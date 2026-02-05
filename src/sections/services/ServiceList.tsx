@@ -1,7 +1,7 @@
 "use client";
 
 import { useContent } from "@/content/provider";
-import { Check, Activity } from "lucide-react";
+import { Activity } from "lucide-react";
 
 export default function ServiceList() {
     const { services } = useContent();
@@ -50,7 +50,7 @@ export default function ServiceList() {
                                             </div>
                                             <div>
                                                 <h4 className="text-sm font-bold text-off-white mb-1">{feature}</h4>
-                                                <p className="text-[11px] text-silver/60 leading-relaxed">Enterprise-grade implementation standard.</p>
+
                                             </div>
                                         </div>
                                     ))}

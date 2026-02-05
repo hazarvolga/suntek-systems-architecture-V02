@@ -3,10 +3,15 @@
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { useContent } from '@/content/provider';
+import { NavigationItem } from '@/content/schema';
 import TopBar from './TopBar';
 
 export default function Header() {
     const { nav, site } = useContent();
+
+    if (!site?.logo) {
+        return null;
+    }
 
     return (
         <header className="fixed top-0 w-full z-50 bg-matte-slate/90 backdrop-blur-xl border-b border-grid-line">
@@ -20,7 +25,7 @@ export default function Header() {
                     <h2 className="text-xl font-bold tracking-tighter text-off-white uppercase group-hover:text-primary transition-colors">{site.name}</h2>
                 </Link>
                 <nav className="hidden lg:flex items-center gap-8">
-                    {nav.header.map((link) => (
+                    {nav.header.map((link: NavigationItem) => (
                         <Link
                             key={link.href}
                             href={link.href}

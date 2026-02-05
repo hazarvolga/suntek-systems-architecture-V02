@@ -27,6 +27,78 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Proje Süresi", value: "16-24 Hafta" },
                 { label: "Azalma", value: "Stok Maliyeti" }
+            ],
+            subFeatures: [
+                {
+                    title: "DSX Üretim Optimizasyonu",
+                    description: "Demand Solutions DSX tedarik zinciri planınız ile üretiminiz arasındaki bağı kurar. Stokları azaltın, üretim kapasitenizi arttırın, planlamaya harcadığınız zamanı azaltın.",
+                    features: [
+                        "Talep Optimizasyonu: Müşteri seviyesinde planlama",
+                        "Tedarik Optimizasyonu: Dinamik stok dengeleme",
+                        "Üretim Optimizasyonu: Maliyet odaklı çizelgeleme",
+                        "İşbirliği: Gerçek zamanlı paydaş verisi",
+                        "Veri Görselleştirme: Canlı raporlar",
+                        "IBP/S&OP: 10 yıllık vizyon ve senaryo planlama"
+                    ],
+                    image: "/images/services/digital-transformation/dx-1.jpg"
+                },
+                {
+                    title: "Başarı Hikayesi: Thibiant International",
+                    description: "\"Demand Solutions Üretim Optimizasyonu ile üç veya beş kişilik bir planlama ekibi yerine sadece bir kişi üretim çizelgelememizi yapabiliyor.\" - Sergey Gulak, IT Direktörü",
+                    features: [
+                        "Optimizasyon: İhtiyaca göre anlık çizelgeleme",
+                        "Dengeleme: Talep vs Kapasite",
+                        "Senaryo Analizi: Maliyet ve süre karşılaştırma",
+                        "Müşteri Memnuniyeti: Esnek teslimat tarihleri"
+                    ],
+                    image: "/images/services/digital-transformation/dx-2.jpg"
+                },
+                {
+                    title: "Demand Management Bulut Çözümleri",
+                    description: "Küresel çözümler sunan Demand Management, müşterilerinin tedarik zincirlerini uçtan uca optimize etmeleri için bulut çözümleri sağlar.",
+                    features: [
+                        "Talep & Tedarik Optimizasyonu",
+                        "Üretim Optimizasyonu",
+                        "Satış Operasyon Planlama (Entegre İş Planlaması)"
+                    ],
+                    image: "/images/services/digital-transformation/dx-3.jpg"
+                },
+                {
+                    title: "SAP S/4HANA Akıllı Dönüşüm Fabrikası",
+                    description: "Suntek Dönüşüm Fabrikası, SAP S/4HANA dönüşüm projelerini 16-24 hafta gibi kısa bir sürede hayata geçiriyor. Mevcut ERP sisteminizi dijital ortama hızla taşıyın.",
+                    features: [
+                        "Hız: 16-24 haftada canlı geçiş",
+                        "Deneyim: 20+ Başarılı Dönüşüm, 25 Endüstri, 46 Yıl",
+                        "Kapsam: 193 Ülke, 390,000 Müşteri"
+                    ],
+                    image: "/images/services/digital-transformation/sap-landing.jpg"
+                },
+                {
+                    title: "Neden Bizi Tercih Etmelisiniz?",
+                    description: "Geleceğe hazır, yönetilebilir ve profesyonel dönüşüm süreci.",
+                    features: [
+                        "Deneyimli: 200+ uzman kadro",
+                        "Uygun Fiyatlı: Paket yaklaşımı",
+                        "Hızlı: Kısa sürede devreye alma",
+                        "Öngörülebilir: SAP Readiness Check ile risk yönetimi",
+                        "Profesyonel: RACI matrisi ve şablon setleri"
+                    ],
+                    image: "/images/services/digital-transformation/why-us.png"
+                },
+                {
+                    title: "Dönüşüm Paketi ve Avantajlar",
+                    description: "Tek paket seçeneği ile Full Sistem Dönüşümü. Dönüşüm öncesi ve sonrası ihtiyaç duyulan tüm hizmetler dahil.",
+                    features: [
+                        "SAP Readiness Check Kontrolü",
+                        "OSS Notes Yüklenmesi",
+                        "CVI (Müşteri Tedarikçi Entegrasyonu)",
+                        "Yeni GL Taşıması",
+                        "En fazla 5 Şirket Kodu & 10 Yıllık Finansal Belge",
+                        "FIORI Uygulamaları (Max 20)",
+                        "Haftalık Güncelleme Toplantıları"
+                    ],
+                    image: "/images/services/digital-transformation/sap-process.jpg"
+                }
             ]
         },
         {
@@ -42,6 +114,18 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Model", value: "Hibrit / On-Prem" },
                 { label: "Odak", value: "Verimlilik" }
+            ],
+            subFeatures: [
+                {
+                    title: "BT Envanter Yönetimi",
+                    description: "Kurumunuzun donanım ve yazılım varlıklarının yaşam döngüsü yönetimi, lisans takibi ve maliyet optimizasyonu.",
+                    features: ["Varlık Takibi", "Lisans Uyumluluğu", "Maliyet Analizi"]
+                },
+                {
+                    title: "Bulut Geçiş Danışmanlığı",
+                    description: "Azure, AWS veya Google Cloud platformlarına güvenli ve kesintisiz geçiş stratejilerinin belirlenmesi.",
+                    features: ["Migrasyon Planı", "Hibrit Bulut Mimarisi", "Güvenlik Denetimi"]
+                }
             ]
         },
         {
@@ -57,6 +141,20 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Partnerler", value: "Fortinet, Sophos" },
                 { label: "Kapsam", value: "L3-L7 Koruma" }
+            ],
+            subFeatures: [
+                {
+                    title: "Yeni Nesil Güvenlik Duvarı (NGFW)",
+                    description: "Uygulama kontrolü, IPS, antivirüs ve web filtreleme özelliklerini tek cihazda sunan bütünleşik güvenlik.",
+                    features: ["Derin Paket Analizi", "Tehdit İstihbaratı", "SSL Denetimi"],
+                    image: "/images/services/network-security/fortinet-firewall.jpg"
+                },
+                {
+                    title: "Ağ Erişim Kontrolü (NAC)",
+                    description: "Ağa bağlanan tüm cihazların kimlik doğrulamasını ve güvenlik politikalarına uyumluluğunu denetleyen sistemler.",
+                    features: ["Cihaz Görünürlüğü", "Otomatik Karantina", "Misafir Yönetimi"],
+                    image: "/images/services/network-security/nac-solution.jpg"
+                }
             ]
         },
         {
@@ -72,6 +170,20 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Partnerler", value: "Veeam, Acronis" },
                 { label: "SLA", value: "99.9% Uptime" }
+            ],
+            subFeatures: [
+                {
+                    title: "İş Sürekliliği ve Erişilebilirlik",
+                    description: "Felaket anında kritik sistemlerin saniyeler içinde yedek lokasyondan çalışmaya başlamasını sağlayan çözüm.",
+                    features: ["Anlık Replikasyon", "Otomatik Failover", "RPO/RTO Hedefleri"],
+                    image: "/images/services/disaster-recovery/business-continuity.jpg"
+                },
+                {
+                    title: "Veeam Backup & Replication",
+                    description: "Sanal, fiziksel ve bulut iş yükleri için tek platformda lider veri koruma çözümü.",
+                    features: ["Sanal Makine Yedekleme", "Fidye Yazılımı Koruması", "Hızlı Kurtarma"],
+                    image: "/images/services/disaster-recovery/veeam-backup.jpg"
+                }
             ]
         },
         {
@@ -87,6 +199,26 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Marka", value: "Axis, Milestone" },
                 { label: "Yönetim", value: "Merkezi" }
+            ],
+            subFeatures: [
+                {
+                    title: "Plaka Tanıma Sistemleri (LPR)",
+                    description: "Yüksek doğruluk oranlı araç tanıma, otopark yönetimi, kampüs güvenliği ve şehir izleme entegrasyonu.",
+                    features: ["Gece/Gündüz Tanıma", "Kara Liste Alarmı", "Hız İhlal Tespiti"],
+                    image: "/images/services/integrated-security/lpr-system.jpg"
+                },
+                {
+                    title: "Çevre Güvenlik Sistemleri",
+                    description: "Tesis sınırlarını koruyan mikrodalga bariyerler, fiber optik algılama ve akıllı video analiz çözümleri.",
+                    features: ["Sanal Çit", "İhlal Tespiti", "Radar Entegrasyonu"],
+                    image: "/images/services/integrated-security/perimeter-security.jpg"
+                },
+                {
+                    title: "Geçiş Kontrol ve Biyometri",
+                    description: "Parmak izi, yüz tanıma ve kartlı geçiş sistemleri ile personel ve ziyaretçi trafiğinin güvenli yönetimi.",
+                    features: ["Biyometrik Doğrulama", "Turnike Entegrasyonu", "Ziyaretçi Takibi"],
+                    image: "/images/services/integrated-security/access-control.jpg"
+                }
             ]
         },
         {
@@ -102,6 +234,26 @@ export const servicesContent: ServicesPageContent = {
             capabilities: [
                 { label: "Referans", value: "Vodafone Arena" },
                 { label: "Standart", value: "ISO 27001" }
+            ],
+            subFeatures: [
+                {
+                    title: "Yapısal Kablolama Çözümleri",
+                    description: "Cat6/6A/7 bakır kablolama, patch panel düzenlemesi ve sertifikasyon hizmetleri ile hatasız ağ altyapısı.",
+                    features: ["ANSI/TIA/EIA Standartları", "Kablo Düzenleme", "Test ve Etiketleme"],
+                    image: "/images/services/infrastructure/cabling.jpg"
+                },
+                {
+                    title: "Fiber Optik Altyapı",
+                    description: "Uzun mesafeli veri iletimi için fiber optik kablolama, füzyon sonlandırma (ek) ve OTDR test hizmetleri.",
+                    features: ["Single/Multi Mode Fiber", "Core Hizalama", "Kayıp Analizi"],
+                    image: "/images/services/infrastructure/fiber-optic.jpg"
+                },
+                {
+                    title: "Veri Merkezi Kurulumu",
+                    description: "Yükseltilmiş döşeme, hassas iklimlendirme, FM200 söndürme ve izleme sistemleri ile anahtar teslim veri merkezi.",
+                    features: ["İklimlendirme", "Güç Yedekliliği (UPS/Jeneratör)", "Ortam İzleme"],
+                    image: "/images/services/infrastructure/datacenter.jpg"
+                }
             ]
         }
     ]

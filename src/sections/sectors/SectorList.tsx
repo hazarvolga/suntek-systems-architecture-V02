@@ -1,7 +1,6 @@
 "use client";
 
 import { useContent } from "@/content/provider";
-import { Shield, Zap, BookOpen } from "lucide-react"; // Generic icons, could be dynamic mapped
 
 export default function SectorList() {
     const { sectors } = useContent();

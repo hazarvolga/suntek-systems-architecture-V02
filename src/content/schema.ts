@@ -1,4 +1,4 @@
-import { LucideIcon } from "lucide-react";
+
 
 // --- Primitives ---
 
@@ -85,6 +85,12 @@ export interface ServiceItem {
         label: string;
         value: string;
     }[];
+    subFeatures?: {
+        title: string;
+        description: string;
+        features: string[];
+        image?: string;
+    }[];
 }
 
 export interface ServicesPageContent {
@@ -93,14 +99,17 @@ export interface ServicesPageContent {
 }
 
 export interface ProjectItem {
-    id: string; // e.g. "SUN-2023-AF"
+    id: string;
+    slug: string; // For routing /projects/[slug]
     title: string;
     description: string;
-    outcome: string;
-    year: string;
-    stack: string;
-    sector: string;
-    category: "CLOUD_INFRA" | "EMBEDDED" | "CYBER_SEC"; // Literal types matching filter logic
+    content?: string; // Markdown body
+    client?: string;
+    location?: string;
+    year?: string;
+    category?: string;
+    tags?: string[];
+    image?: string;
 }
 
 export interface ProjectsPageContent {
@@ -197,6 +206,26 @@ export interface CampaignItem {
 export interface CampaignsPageContent {
     hero: HeroSection;
     items: CampaignItem[];
+}
+
+export interface PartnerItem {
+    id: string;
+    name: string;
+    tier: string;
+    level?: string;
+    core: string;
+    category: string;
+    logo: string;
+    specs: {
+        icon: string; // Lucide icon name
+        label: string;
+    }[];
+    modId: string;
+}
+
+export interface PartnersPageContent {
+    hero: HeroSection;
+    items: PartnerItem[];
 }
 
 // --- Global Config ---

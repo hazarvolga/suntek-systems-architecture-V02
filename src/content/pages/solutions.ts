@@ -3,41 +3,55 @@ import { SolutionsPageContent } from "../schema";
 export const solutionsContent: SolutionsPageContent = {
     hero: {
         sysCode: "SOL_01",
-        title: "Yenilikçi <span class='text-primary'>Çözümler</span>",
-        description: "İş süreçlerinizi dijital çağa taşıyan, verimliliği artıran ve güvenliği sağlayan entegre teknoloji paketleri.",
-        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9yQ5zX8W2F4G3H1J7K6L0M9N5B4V8C3X2Z1"
+        badge: "Teknoloji Çözümlerimiz",
+        title: "İşletmenizi <span class='text-primary'>Geleceğe Taşıyın</span>",
+        description: "En karmaşık teknolojik zorlukları, yenilikçi ve sürdürülebilir çözümlerle basitleştiriyoruz. Veri odaklı stratejilerimizle dijital dönüşümün her aşamasında yanınızdayız.",
+        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_E52qAgQvVbgDqEq7YXZJpXN7Sg0bDbCx9_Q0ZtY-t3QsgcO_XlcgXwdGzhX9OOFYyX0PDe9L9Z8RjVBWfy2lcqM9Nlo6ysP7037E9T2lXtb3MypX3Y1Y62Gvkyk0E0amF45Q220XnKCCJ7NnRo49X-EueGZqK6YmnReu2M9wXy4E0qQ4Z9dD2fe2gLzJweFc7GZ9FkXnZGEKtyW7uP9KkyQ30L7__06t9X7R3q1F5G8Xy7A4Bw2C9k5E2L0J1Z4X8Q"
     },
     items: [
         {
-            id: "dijital-donusum",
-            title: "Dijital Dönüşüm ve Akıllı Sistemler",
-            description: "Demand Solutions DSX ile tedarik zinciri ve üretim optimizasyonu sağlıyor, SAP S/4HANA dönüşüm projeleriyle ERP sistemlerinizi geleceğe taşıyoruz.",
+            id: "bulut-donusumu",
+            title: "Bulut Dönüşümü",
+            description: "Maliyetlerinizi optimize eden, esnek ve güvenli bulut geçiş stratejileri. Hibrit ve çoklu bulut mimarileri ile ölçeklenebilirliği garanti altına alıyoruz.",
             features: [
-                "DSX Üretim Optimizasyonu",
-                "Talep ve Tedarik Planlama",
-                "SAP S/4HANA Akıllı Dönüşüm Fabrikası",
-                "Veri Görselleştirme",
-                "IBP/S&OP Stratejik Planlama"
+                "Re-platforming ve Modernizasyon",
+                "Serverless Architecture Geçişi",
+                "Veri Merkezi Bulut Migrasyonu",
+                "Bulut Maliyet Optimizasyonu (FinOps)"
             ],
             capabilities: [
-                { label: "Proje Süresi", value: "16-24 Hafta" },
-                { label: "Azalma", value: "Stok Maliyeti" }
+                { label: "Maliyet Tasarrufu", value: "30%" },
+                { label: "Hız Artışı", value: "2x" }
             ]
         },
         {
-            id: "entegre-guvenlik",
-            title: "Entegre Güvenlik Sistemleri",
-            description: "Kamera, geçiş kontrol, yangın ve alarm sistemlerini tek bir çatı altında topluyoruz. Axis ve çözüm ortaklarımızla akıllı gözetim ve güvenlik sağlıyoruz.",
+            id: "siber-guvenlik-operasyonlari",
+            title: "Siber Güvenlik Operasyonları (SOC)",
+            description: "7/24 izleme ve anlık müdahale ile dijital varlıklarınız her an güvende. Proaktif tehdit avcılığı ve zafiyet yönetimi ile riskleri önceden belirliyoruz.",
             features: [
-                "Konuşlandırılabilir Gözetim",
-                "Video Analiz ve İnsan Sayma",
-                "Plaka Tanıma Sistemleri (LPR)",
-                "Çevre ve Alan Güvenliği",
-                "Genel Seslendirme ve Acil Anons"
+                "7/24 Tehdit İzleme ve Yanıt",
+                "Endpoint Detection & Response (EDR)",
+                "Zafiyet Tarama ve Yönetimi",
+                "Olay Müdahale ve Adli Analiz"
             ],
             capabilities: [
-                { label: "Marka", value: "Axis, Milestone" },
-                { label: "Yönetim", value: "Merkezi" }
+                { label: "Yanıt Süresi", value: "< 15dk" },
+                { label: "İzleme Gücü", value: "7/24" }
+            ]
+        },
+        {
+            id: "veri-analitigi-ai",
+            title: "Veri Analitiği ve Yapay Zeka",
+            description: "Büyük verinizden anlamlı içgörüler çıkararak karar verme süreçlerinizi güçlendiriyoruz. Makine öğrenmesi ve AI modelleri ile operasyonel verimliliği maksimize edin.",
+            features: [
+                "Tahminleyici Analitik",
+                "Görüntü İşleme ve Analiz",
+                "Büyük Veri Mimarisi Kurulumu",
+                "Özel AI Model Geliştirme"
+            ],
+            capabilities: [
+                { label: "Veri İşleme", value: "Petabyte+" },
+                { label: "Doğruluk Payı", value: "98%+" }
             ]
         }
     ]

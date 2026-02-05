@@ -2,51 +2,123 @@ import { ProjectsPageContent } from "../schema";
 
 export const projectsContent: ProjectsPageContent = {
     hero: {
-        sysCode: "SYS_ARCHIVE",
-        badge: "System Archive",
-        title: "References: System Archive",
-        description: "High-density technical repository documenting engineering achievements, architectural implementations, and industrial records. Sorted by system precision."
+        sysCode: "PRJ_01",
+        badge: "Başarı Hikayeleri",
+        title: "Gerçekleştirdiğimiz <span class='text-primary'>Referans Projeler</span>",
+        description: "Farklı sektörlerdeki müşterilerimiz için hayata geçirdiğimiz dijital dönüşüm, altyapı ve güvenlik projelerinden seçkiler.",
+        backgroundImage: "/images/hero/projects-hero.webp"
     },
     items: [
         {
-            id: "SUN-2023-AF",
-            title: "Financial Core Migration: Legacy Modernization",
-            description: "Full-scale migration of a Tier-1 banking provider's monolithic architecture to a cloud-native microservices environment. The project required continuous real-time transaction systems within a 48-hour transition window.",
-            outcome: "Achieved 40% increase in transaction volume and 120ms reduction in API latency. System availability increased to 99.999% with circuit breakers and automated failover.",
+            id: "prj-wifi",
+            slug: "acik-alan-wifi-calismasi",
+            title: "Açık Alan WiFi Çalışması",
+            description: "Geniş ölçekli açık alanlar için yüksek yoğunluklu kablosuz ağ altyapısının planlanması ve kurulumu.",
+            client: "Kamu Kurumu",
+            location: "İstanbul",
             year: "2023",
-            stack: "Kubernetes, Java, Spring Boot, Kafka, PostgreSQL",
-            sector: "Finance / FinTech",
-            category: "CLOUD_INFRA"
+            category: "Altyapı",
+            tags: ["Network", "WiFi", "Dış Ortam"],
+            image: "/images/projects/wifi-project.webp"
         },
         {
-            id: "SUN-2022-EM",
-            title: "IoT Edge Mesh Implementation",
-            description: "Robust edge mesh setup for real-time sensor data in a multi-facility manufacturing environment. Overcame data synchronization challenges over low-bandwidth satellite links and signal interference in high electromagnetic interference (EMI) zones.",
-            outcome: "Successful hardware-level encryption and sub-10ms local processing integration. Developed a custom data prioritization protocol reducing bandwidth consumption by 65% while ensuring critical alarm delivery.",
+            id: "prj-data-center",
+            slug: "veri-merkezi-cozumleri",
+            title: "Veri Merkezi Modernizasyonu",
+            description: "Mevcut veri merkezinin ISO 27001 standartlarına uygun olarak yenilenmesi, iklimlendirme ve enerji altyapısının güçlendirilmesi.",
+            client: "Finans Sektörü",
+            location: "Ankara",
             year: "2022",
-            stack: "C++, MQTT, ARM Architecture, Rust, LoRaWAN",
-            sector: "Manufacturing / Industry 4.0",
-            category: "EMBEDDED"
+            category: "Veri Merkezi",
+            tags: ["Data Center", "Enerji", "Soğutma"],
+            image: "/images/projects/datacenter.webp"
         },
         {
-            id: "SUN-2022-SA",
-            title: "Infrastructure Security Hardening",
-            description: "Comprehensive audit and Zero-Trust architecture revision for a national logistics provider. Scope included securing 14 geographically distributed data centers and strengthening edge-to-cloud communication against complex threats.",
-            outcome: "Implemented NIST-compliant IAM protocols and automated vulnerability scanning. Patched 200+ high-severity vulnerabilities and established a real-time SOC dashboard with AI-backed anomaly detection.",
-            year: "2022",
-            stack: "Terraform, Vault, SentinelOne, Cisco Secure, AWS",
-            sector: "Logistics / Infrastructure",
-            category: "CYBER_SEC"
+            id: "prj-fiber",
+            slug: "fiber-optik-kablolama",
+            title: "Kampüs Fiber Optik Altyapısı",
+            description: "Üniversite kampüsü genelinde binalar arası yüksek hızlı fiber optik omurga kurulumu ve sonlandırma işlemleri.",
+            client: "Üniversite",
+            location: "İzmir",
+            year: "2023",
+            category: "Altyapı",
+            tags: ["Fiber Optik", "Yapısal Kablolama"],
+            image: "/images/projects/fiber.webp"
         },
         {
-            id: "SUN-2021-TC",
-            title: "High-Availability Telecom Core",
-            description: "5G-ready core network architecture and deployment for a regional telecom operator. Requirements included supporting millions of concurrent sessions and low jitter for VoIP/real-time gaming traffic.",
-            outcome: "Delivered a containerized core using SR-IOV for high-performance networking. Performance verified with zero packet loss at 300% peak load simulation. Automated elastic scaling based on regional traffic demand.",
+            id: "prj-hotel",
+            slug: "the-museum-hotel",
+            title: "The Museum Hotel Teknoloji Entegrasyonu",
+            description: "Lüks otel projesi için IPTV, oda otomasyonu, GPON altyapısı ve tüm zayıf akım sistemlerinin entegre edilmesi.",
+            client: "The Museum Hotel",
+            location: "Antakya",
             year: "2021",
-            stack: "OpenStack, Docker, Go, Redis, Prometheus",
-            sector: "Telecommunications",
-            category: "CLOUD_INFRA"
+            category: "Otelcilik",
+            tags: ["Otel Otomasyonu", "IPTV", "GPON"],
+            image: "/images/projects/museum-hotel.webp"
+        },
+        {
+            id: "prj-sumitomo",
+            slug: "sumitomo-chemical-eu",
+            title: "Sumitomo Chemical BT Altyapısı",
+            description: "Sumitomo Chemical Avrupa ofisleri için standartlara uygun BT altyapı kurulumu ve sistem odası tasarımı.",
+            client: "Sumitomo Chemical",
+            location: "Avrupa",
+            year: "2022",
+            category: "Endüstri",
+            tags: ["IT Altyapı", "Sistem Odası"],
+            image: "/images/projects/sumitomo.webp"
+        },
+        {
+            id: "prj-3d-office",
+            slug: "yazilim3d-ofis",
+            title: "Yazılım3D Ofis Teknoloji Projesi",
+            description: "Yazılım ve tasarım ofisi için yüksek performanslı ağ altyapısı ve workstation sistemlerinin kurulumu.",
+            client: "Yazılım3D",
+            location: "İstanbul",
+            year: "2023",
+            category: "Ofis",
+            tags: ["Ofis Teknolojileri", "Workstation"],
+            image: "/images/projects/3d-office.webp"
+        },
+        // Source: suntek-icerik/data/portfolio/yazilim3d-ofis.json
+        {
+            id: "prj-yazilim3d",
+            slug: "yazilim3d-ofis",
+            title: "Yazılım3D Ofis",
+            description: "Suntek olarak Yazılım3D ofisinin fiber ve kablolama altyapısını güçlendirmek için en iyi çözümleri sunduk. Güvenilir teknoloji hizmetlerimizle, ofisinizin internet hızını artırarak daha verimli çalışmanıza yardımcı oluyoruz.",
+            client: "Yazılım3D",
+            location: "İstanbul",
+            year: "2023",
+            category: "Ofis",
+            tags: ["Fiber Optik", "Kablolama", "Ofis Altyapısı"],
+            image: "/images/yazilim3d-ofis/yazilim3d-ofis_6542.webp"
+        },
+        // Source: suntek-icerik/data/portfolio/istanbul-cup-tenis-turnuvasi.json
+        {
+            id: "prj-istanbul-cup",
+            slug: "istanbul-cup-tenis-turnuvasi",
+            title: "İstanbul Cup Tenis Turnuvası",
+            description: "Suntek olarak İstanbul Cup Tenis Turnuvasının kablolama altyapısını güçlendirmek için en iyi çözümleri sunduk. Profesyonel ekibimizle gerçekleştirdiğimiz çalışmalarla, güvenli ve hızlı bir ağ altyapısı oluşturarak işinizin kesintisiz devam etmesini sağlıyoruz.",
+            client: "İstanbul Cup",
+            location: "İstanbul",
+            year: "2023",
+            category: "Etkinlik",
+            tags: ["Açık Alan WiFi", "Etkinlik Altyapısı", "Network"],
+            image: "/images/istanbul-cup-tenis-turnuvasi/istanbul_cup_heyecani_basliyor_h45170_1230.jpg"
+        },
+        // Source: suntek-icerik/data/project-type/acik-alan-wifi-calismasi.json
+        {
+            id: "prj-acik-alan-wifi",
+            slug: "acik-alan-wifi-calismasi",
+            title: "Açık Alan Wifi Çalışması",
+            description: "Geniş ölçekli açık alanlar için yüksek yoğunluklu kablosuz ağ altyapısının planlanması ve kurulumu. İstanbul Cup Tenis Turnuvası ve benzeri etkinlikler için özel çözümler.",
+            client: "Kamu - Özel Sektör",
+            location: "İstanbul",
+            year: "2023",
+            category: "Altyapı",
+            tags: ["WiFi", "Açık Alan", "Kablosuz Ağ"],
+            image: "/images/acik-alan-wifi-calismasi/istanbul_cup_heyecani_basliyor_h45170_3168.jpg"
         }
     ]
 };

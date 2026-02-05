@@ -22,6 +22,11 @@ export function buildSearchIndex(
 ): SearchDocument[] {
     const documents: SearchDocument[] = [];
 
+    // Defensive check
+    if (!services?.items || !sectors?.items || !solutions?.items || !site) {
+        return [];
+    }
+
     // --- Services ---
     services.items.forEach(service => {
         documents.push({

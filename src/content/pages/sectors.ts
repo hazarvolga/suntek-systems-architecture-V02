@@ -2,55 +2,56 @@ import { SectorsPageContent } from "../schema";
 
 export const sectorsContent: SectorsPageContent = {
     hero: {
-        sysCode: "SEC_01",
-        title: "Sektörel <span class='text-primary'>Uzmanlık</span>",
-        description: "Farklı endüstrilerin kendine özgü zorluklarını biliyor, sektöre özel terzi işi çözümler üretiyoruz.",
-        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCLtYyL9S3vXQzR4G7XhK9J2M_n5B8V1C6D4F3H0ZqW2YlI8J9K7X6G5V4C3B2N1M8L0K9J7H6G5F4D3S2A1Q0W9E8R7TY6U5I4O3P2"
+        sysCode: "SCT_01",
+        badge: "Sektörel Çözümler",
+        title: "Sektöre Özel <span class='text-primary'>Teknoloji Yaklaşımı</span>",
+        description: "Eğitimden sağlığa, her sektörün kendine özgü ihtiyaçlarını anlıyor ve en uygun teknolojik çözümleri sunuyoruz. Mühendislik prensiplerimizle her sektöre matematiksel kesinlik getiriyoruz.",
+        backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_E52qAgQvVbgDqEq7YXZJpXN7Sg0bDbCx9_Q0ZtY-t3QsgcO_XlcgXwdGzhX9OOFYyX0PDe9L9Z8RjVBWfy2lcqM9Nlo6ysP7037E9T2lXtb3MypX3Y1Y62Gvkyk0E0amF45Q220XnKCCJ7NnRo49X-EueGZqK6YmnReu2M9wXy4E0qQ4Z9dD2fe2gLzJweFc7GZ9FkXnZGEKtyW7uP9KkyQ30L7__06t9X7R3q1F5G8Xy7A4Bw2C9k5E2L0J1Z4X8Q"
     },
     items: [
         {
-            id: "saglik-ve-yasam",
-            title: "Sağlık ve Yaşam",
-            description: "Modern sağlık sistemi için dijital dönüşümü hızlandırıyor, hasta verilerini ve hastane süreçlerini yapay zeka ile optimize ediyoruz.",
+            id: "egitim",
+            title: "Eğitim",
+            description: "Hibrit öğrenme sistemleri, kampüs ağ güvenliği ve uzaktan eğitim altyapıları ile eğitimde dijitalleşmeyi hızlandırıyoruz. Geleceğin kampüslerini bugünden inşa ediyoruz.",
             features: [
-                "Big Data Akıllı Veri Depolama",
-                "Tekno SOS - Acil Çağrı Sistemi",
-                "Laboratuvar Isı Takip",
-                "Hasta Bilgilendirme Sistemleri"
+                "Hibrit Sınıf Entegrasyonu",
+                "Kampüs Ağ Güvenliği",
+                "Microsoft Eğitim Çözümleri",
+                "Yük Dengeleme ve Kesintisiz Erişim"
             ],
             stats: [
-                { label: "Veri Güvenliği", value: "KVKK/HIPAA" },
-                { label: "İzlenebilirlik", value: "100%" }
+                { label: "Okul Sayısı", value: "120+" },
+                { label: "Kullanıcı", value: "100K+" }
             ]
         },
         {
-            id: "endustri-4-0",
-            title: "Endüstri 4.0 ve İmalat",
-            description: "Geleceğin fabrikalarını kuruyoruz. Üretim süreçlerini otonom hale getiriyor, robotik ve yapay zeka ile verimliliği artırıyoruz.",
+            id: "saglik",
+            title: "Sağlık",
+            description: "Veri gizliliği, yüksek erişilebilirlik ve kesintisiz ağ çözümleri ile sağlık kuruluşlarının dijital altyapısını güçlendiriyoruz. Hayat kurtaran teknolojiler için %100 uptime hedefliyoruz.",
             features: [
-                "Akıllı Fabrika Dönüşümü",
-                "IIoT ve M2M İletişim",
-                "Kestirimci Bakım",
-                "Siber-Fiziksel Sistemler"
+                "KVKK ve Veri Gizliliği",
+                "7/24 Kesintisiz Ağ Erişimi",
+                "Tıbbi Görüntü Arşivleme Sistemleri",
+                "Teletıp Altyapı Desteği"
             ],
             stats: [
-                { label: "Verim Artışı", value: "%30+" },
-                { label: "Hata Payı", value: "Min" }
+                { label: "Hastane Sayısı", value: "45+" },
+                { label: "Veri Güvenliği", value: "100%" }
             ]
         },
         {
-            id: "egitim-kurumlari",
-            title: "Eğitim Kurumları",
-            description: "Okul ve üniversiteler için Microsoft tabanlı hibrit öğrenme, uzaktan eğitim ve kampüs güvenlik teknolojileri sağlıyoruz.",
+            id: "ucretli-perakende",
+            title: "Perakende",
+            description: "Akıllı mağaza çözümleri, stok optimizasyonu ve güvenli ödeme sistemleri ile perakende sektöründe verimliliği artırıyoruz. Müşteri deneyimini veriyle optimize ediyoruz.",
             features: [
-                "Microsoft Teams Entegrasyonu",
-                "Hibrit Sınıf Kurulumu",
-                "Office 365 Eğitimleri",
-                "LMS (Öğrenim Yönetim Sistemi)"
+                "Akıllı Envanter Yönetimi",
+                "Güvenli Ödeme Altyapıları",
+                "Müşteri Analitiği",
+                "Mağaza İçi Ağ Çözümleri"
             ],
             stats: [
-                { label: "Partner", value: "Microsoft Edu" },
-                { label: "Kitle", value: "K-12" }
+                { label: "Mağaza Lokasyonu", value: "500+" },
+                { label: "İşlem Hızı", value: "2x" }
             ]
         }
     ]

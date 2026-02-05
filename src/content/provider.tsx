@@ -1,79 +1,62 @@
 "use client";
 
-import React, { createContext, useContext } from "react";
-import {
-    SiteConfig,
-    NavigationConfig,
-    HomePageContent,
-    AboutPageContent,
-    ServicesPageContent,
-    ContactPageContent,
-    ProjectsPageContent,
-    SectorsPageContent,
-    SolutionsPageContent,
-    CareersPageContent,
-    LegalPageContent,
-    CampaignsPageContent
-} from "./schema";
-
-import { siteConfig } from "./site-config";
+import React from "react";
 import { navigation } from "./navigation";
+import { siteConfig } from "./site-config";
 import { homeContent } from "./pages/home";
 import { servicesContent } from "./pages/services";
-import { projectsContent } from "./pages/projects";
-import { contactContent } from "./pages/contact";
 import { sectorsContent } from "./pages/sectors";
 import { solutionsContent } from "./pages/solutions";
+import { partnersContent } from "./pages/partners";
 import { careersContent } from "./pages/careers";
-import { legalContent } from "./pages/legal";
-import { campaignsContent } from "./pages/campaigns";
+import { contactContent } from "./pages/contact";
+import { projectsContent } from "./pages/projects";
 
-const aboutContent = {} as AboutPageContent; // Placeholder for now
-
-interface ContentContextType {
-    site: SiteConfig;
-    nav: NavigationConfig;
-    home: HomePageContent;
-    about: AboutPageContent;
-    services: ServicesPageContent;
-    projects: ProjectsPageContent;
-    sectors: SectorsPageContent;
-    contact: ContactPageContent;
-    solutions: SolutionsPageContent;
-    careers: CareersPageContent;
-    legal: LegalPageContent;
-    campaigns: CampaignsPageContent;
-}
-
-const ContentContext = createContext<ContentContextType | undefined>(undefined);
+// Minimal provider - being phased out in favor of direct loadStructuredContent usage
+// but still used for global layout elements like Header, Footer, and Search
+const ContentContext = React.createContext<{
+    nav: typeof navigation;
+    site: typeof siteConfig;
+    home: typeof homeContent;
+    services: typeof servicesContent;
+    sectors: typeof sectorsContent;
+    solutions: typeof solutionsContent;
+    partners: typeof partnersContent;
+    careers: typeof careersContent;
+    contact: typeof contactContent;
+    projects: typeof projectsContent;
+}>({
+    nav: navigation,
+    site: siteConfig,
+    home: homeContent,
+    services: servicesContent,
+    sectors: sectorsContent,
+    solutions: solutionsContent,
+    partners: partnersContent,
+    careers: careersContent,
+    contact: contactContent,
+    projects: projectsContent
+});
 
 export function ContentProvider({ children }: { children: React.ReactNode }) {
-    const value = {
-        site: siteConfig,
-        nav: navigation,
-        home: homeContent,
-        about: aboutContent,
-        services: servicesContent,
-        projects: projectsContent,
-        sectors: sectorsContent,
-        contact: contactContent,
-        solutions: solutionsContent,
-        careers: careersContent,
-        legal: legalContent,
-        campaigns: campaignsContent
-    };
-
     return (
-        <ContentContext.Provider value={value}>
+        <ContentContext.Provider value={{
+            nav: navigation,
+            site: siteConfig,
+            home: homeContent,
+            services: servicesContent,
+            sectors: sectorsContent,
+            solutions: solutionsContent,
+            partners: partnersContent,
+            careers: careersContent,
+            contact: contactContent,
+            projects: projectsContent
+        }}>
             {children}
         </ContentContext.Provider>
     );
 }
 
 export function useContent() {
-    const context = useContext(ContentContext);
-    if (!context) {
-        throw new Error("useContent must be used within a ContentProvider");
-    }
-    return context;
+    return React.useContext(ContentContext);
 }

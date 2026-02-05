@@ -1,58 +1,97 @@
-import Link from "next/link";
-import ContactForm from "@/sections/contact/ContactForm";
-import ContactInfo from "@/sections/contact/ContactInfo";
+"use client";
 
-export const metadata = {
-    title: "Suntek | Contact",
-    description: "Contact us for global engineering solutions.",
-};
+import { useContent } from "@/content/provider";
+import PageHero from "@/components/layout/PageHero";
+import PageContainer from "@/components/layout/PageContainer";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Linkedin, Twitter, ExternalLink } from "lucide-react";
 
 export default function ContactPage() {
+    const { contact } = useContent();
+
+    if (!contact) return null;
+
     return (
-        <main className="min-h-screen pt-32 pb-24 relative">
-            {/* Page Content */}
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <main className="min-h-screen bg-matte-slate">
+            <PageHero content={contact.hero} />
 
-                {/* Campaign / Banner Section (Kept static as it's a specific marketing component, but could be refactored later if needed) */}
-                <section className="mb-20">
-                    <div className="relative overflow-hidden border border-grid-line group">
-                        {/* Background Image with Filter */}
-                        <div
-                            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 architectural-filter opacity-50"
-                            style={{ backgroundImage: 'linear-gradient(90deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 50%, rgba(10, 10, 10, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAX0Jw6F5ZJo4uhXC1RJFdTDXu4DzjzRKC9O1e2ThY6LqhkNxYfngxqfOjgJbc7AkwolgvMPO_Zm5Oaa50J2nWjZOwTCInv8KV3KN0VmfI3rIUyvnrT5cHHwB_jpX6cBDcb97mYAprAnN0lOJz_ws1FGu3CWg7oOqAiSZcxhbNVw3xtDlwhm5CWT5800R-4SbkCCJcdmxCEybSiUnvHZb2JRzyeEooizJ7J6eerMxOPTAkcrhcz8em0l4DJ2WmuwCNY3yRAUEG8y-j2")' }}
-                        />
+            <PageContainer>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-32">
+                    {/* Address Module */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="group border border-grid-line p-10 bg-matte-black/40 backdrop-blur-sm hover:border-primary/50 transition-all relative overflow-hidden"
+                    >
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-2xl rounded-full" />
+                        <MapPin className="size-8 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-silver/40 mb-4 font-mono">Location_Registry</h3>
+                        <p className="text-off-white text-lg font-light leading-relaxed">
+                            {contact.info.address}
+                        </p>
+                    </motion.div>
 
-                        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-end justify-between gap-8 p-12">
-                            <div className="max-w-2xl space-y-4">
-                                <div className="flex items-center gap-3">
-                                    <span className="px-2 py-1 bg-primary/20 border border-primary/50 text-[10px] font-bold text-primary rounded-none uppercase tracking-wider">
-                                        Current Offer
-                                    </span>
-                                    <p className="text-silver text-[10px] font-mono tracking-widest uppercase">
-                                        ENERGY TRANSITION
-                                    </p>
-                                </div>
-                                <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-off-white leading-tight">
-                                    <span className="text-primary">20% DISCOUNT</span> ON NEXT-GEN SYSTEMS
-                                </h3>
-                                <p className="text-silver font-light leading-relaxed max-w-xl">
-                                    Take advantage of limited-time offers for next-generation energy solutions that increase efficiency in your corporate projects.
-                                </p>
-                            </div>
-                            <Link href="/campaigns/energy-transition">
-                                <button className="bg-primary hover:bg-primary/90 text-white text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-4 transition-all">
-                                    View Details
-                                </button>
-                            </Link>
+                    {/* Contact Module */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="group border border-grid-line p-10 bg-matte-black/40 backdrop-blur-sm hover:border-primary/50 transition-all relative overflow-hidden"
+                    >
+                        <Phone className="size-8 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-silver/40 mb-4 font-mono">Voice_Link</h3>
+                        <div className="space-y-4">
+                            <a href={`tel:${contact.info.phone}`} className="text-off-white text-2xl font-bold tracking-tight block hover:text-primary transition-colors">
+                                {contact.info.phone}
+                            </a>
+                            <a href={`mailto:${contact.info.email}`} className="text-silver/60 text-lg font-light block hover:text-primary transition-colors">
+                                {contact.info.email}
+                            </a>
                         </div>
-                    </div>
-                </section>
+                    </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-                    <ContactForm />
-                    <ContactInfo />
+                    {/* Social Module */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="group border border-grid-line p-10 bg-matte-black/40 backdrop-blur-sm hover:border-primary/50 transition-all relative overflow-hidden"
+                    >
+                        <Linkedin className="size-8 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-silver/40 mb-4 font-mono">Quantum_Presence</h3>
+                        <div className="flex flex-col gap-6">
+                            <a href={contact.social.linkedin} target="_blank" className="flex items-center gap-3 text-off-white hover:text-primary transition-colors group/link">
+                                <span className="text-lg font-bold uppercase">LinkedIn</span>
+                                <ExternalLink className="size-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                            </a>
+                            <a href={contact.social.twitter} target="_blank" className="flex items-center gap-3 text-off-white hover:text-primary transition-colors group/link">
+                                <span className="text-lg font-bold uppercase">Twitter</span>
+                                <ExternalLink className="size-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                            </a>
+                        </div>
+                    </motion.div>
                 </div>
-            </div>
+
+                {/* Map Section */}
+                <div className="border border-grid-line bg-matte-black/50 p-4 aspect-[21/9] relative overflow-hidden grayscale group hover:grayscale-0 transition-all duration-1000">
+                    <div className="absolute inset-0 pointer-events-none border-[12px] border-matte-black z-10" />
+                    <div className="absolute top-8 left-8 z-20 flex flex-col gap-2">
+                        <span className="text-primary font-mono text-[9px] border border-primary/30 px-3 py-1 bg-matte-black/80 uppercase tracking-widest leading-none">
+                            Satellite_Uplink_Active
+                        </span>
+                        <span className="text-silver/40 font-mono text-[9px] border border-white/10 px-3 py-1 bg-matte-black/80 uppercase tracking-widest leading-none">
+                            Coords: 41.1127° N, 29.0227° E
+                        </span>
+                    </div>
+                    {/* Placeholder for map */}
+                    <div className="w-full h-full bg-[#111] grid place-items-center opacity-40">
+                        <div className="text-[10px] font-mono text-silver/20 uppercase animate-pulse">Initializing Visualization Layer...</div>
+                    </div>
+                </div>
+            </PageContainer>
         </main>
     );
 }

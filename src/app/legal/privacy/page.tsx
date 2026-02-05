@@ -1,21 +1,27 @@
-"use client";
+import { loadStructuredContent } from '@/lib/load-structured-content';
+import { SectionRenderer } from '@/components/SectionRenderer';
+import { Metadata } from 'next';
 
-import { useContent } from "@/content/provider";
-import ReactMarkdown from "react-markdown";
+export async function generateMetadata(): Promise<Metadata> {
+    const content = loadStructuredContent('yasal/gizlilik-politikasi.json');
+
+    return {
+        title: content.metadata.title,
+        description: content.metadata.description || undefined,
+    };
+}
 
 export default function PrivacyPage() {
-    const { legal } = useContent();
-    const { privacy } = legal;
+    const content = loadStructuredContent('yasal/gizlilik-politikasi.json');
 
     return (
-        <main className="min-h-screen pt-32 pb-24 bg-matte-black">
+        <main className="min-h-screen pt-32 pb-24">
             <div className="max-w-4xl mx-auto px-6">
-                <h1 className="text-4xl font-bold text-off-white mb-12 border-b border-grid-line pb-8">
-                    {privacy.title}
-                </h1>
-                <article className="prose prose-invert prose-lg prose-headings:text-off-white prose-p:text-silver max-w-none">
-                    <ReactMarkdown>{privacy.content}</ReactMarkdown>
-                </article>
+                <div className="space-y-0">
+                    {content.sections.map((section) => (
+                        <SectionRenderer key={section.id} section={section} />
+                    ))}
+                </div>
             </div>
         </main>
     );

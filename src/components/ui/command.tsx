@@ -27,7 +27,7 @@ Command.displayName = CommandPrimitive.displayName
 
 import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog"
 
-interface CommandDialogProps extends React.ComponentPropsWithoutRef<typeof Dialog> { }
+type CommandDialogProps = React.ComponentPropsWithoutRef<typeof Dialog>;
 
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
     return (
